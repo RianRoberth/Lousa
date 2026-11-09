@@ -1,0 +1,1825 @@
+{
+  "materia": "calculo1",
+  "aulas": [
+    {
+      "id": "2026-08-11",
+      "data": "2026-08-11",
+      "titulo": "Conjuntos",
+      "topicos": [
+        "pertinência",
+        "elementos e notação",
+        "determinação de conjuntos",
+        "quantificadores",
+        "subconjuntos",
+        "conjunto solução"
+      ],
+      "fotos": [
+        "fotos/fotos-da-aula/2026-10-31/1566121519812182207-0.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566121519812182207-1.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566121519812182207-2.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566121519812182207-3.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566121519812182207-4.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566121519812182207-5.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566121519812182207-6.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566121519812182207-7.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566121519812182207-8.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566121519812182207-9.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277450567000064-0.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277450567000064-1.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277450567000064-2.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277450567000064-3.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277696361857115-8.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277696361857115-9.jpg"
+      ],
+      "resumo": "- **Pertinência** liga *elemento* e *conjunto*: $a \\in A$ (pertence), $b \\notin A$ (não pertence).\n- Elementos com letra **minúscula** ($a, b, x$); conjuntos com **maiúscula** ($A, B$).\n- Dá para determinar um conjunto **listando** os elementos entre chaves ou por uma **propriedade**: $\\{x \\mid x \\text{ tem a propriedade } P\\}$. O símbolo $\\mid$ se lê \"tal que\".\n- **Conjunto vazio**: $\\{\\}$ ou $\\varnothing$. Nunca escreva $\\{\\varnothing\\}$ (isso é um conjunto com um elemento).\n- **Quantificadores**: $\\forall$ (para todo), $\\exists$ (existe), $\\nexists$ (não existe).\n- **Subconjunto**: $A \\subset B$ quando todo elemento de $A$ também está em $B$ (relação de inclusão).\n- **Conjunto solução**: os elementos do universo $U$ que tornam a sentença verdadeira.",
+      "transcricao": "## Boa noite: Conjuntos\n\n### Relação de pertinência\nCom o símbolo \"$\\in$\", introduzido pela primeira vez por Peano, indicaremos a expressão \"pertence a\". Para indicar a negação dessa expressão, escreveremos \"$\\notin$\" e leremos \"não pertence\".\n\n**Ex.** Seja $A = \\{a, e, i, o, u\\}$, então temos: $a \\in A$, que será lido como \"a pertence a A\" e $b \\notin A$, que será lido \"não pertence a A\".\n\n### Elementos\nCada um dos objetos, pessoas, números, que formam um conjunto é chamado de elemento do conjunto. Assim, temos os elementos:\na) a, e, i, o, u\nb) ás de ouro, reis de paus\nc) 2, 4, 8, …\n\n### Notação\nIndicaremos os elementos por meio de letras minúsculas: $a, b, c, \\dots, x, y, z$\n\n### Determinação de conjuntos\n1) Por um par de chaves: $\\{\\ \\}$\n2) Por propriedades. Pela propriedade analítica (um conjunto fica determinado quando uma propriedade caracteriza seus elementos)\n\n$\\{x \\mid x \\text{ tem a propriedade } P\\}$ ou $\\{x \\mid x \\text{ pertence a } P\\}$\n\n**Observação:** \"$\\mid$\" lê-se \"tal que\".\n\n**Ex. 4**\na) $A = \\{x \\mid x \\text{ é uma figura geométrica}\\}$, $A = \\{\\text{triângulo, quadrilátero}\\}$\nb) $B = \\{x \\mid x \\text{ é satélite natural da Terra}\\} = \\{\\text{Lua}\\}$\n\n*(No quadro: \"Scilab\".)*\n\n### Tipos de conjuntos\n- Conjunto finito ⇒ conj. das vogais\n- Conjunto vazio. É um conjunto que não possui elementos: $\\{\\ \\}$; $\\varnothing$\n- Não devemos escrever ~~$\\{\\varnothing\\}$~~\n\n---\n\n### Os quantificadores\nEm relação ao conjunto $A = \\{a, e, i, o, j\\}$, podemos dizer que:\n- Qualquer que seja o elemento de A, ela é uma letra do alfabeto da língua portuguesa;\n- Existe um elemento de A que é uma vogal.\n- Existe um **único elemento** de A que é uma consoante.\n- Não existe elemento de A que é letra da palavra [ilegível].\n\nEm matemática, dispomos de símbolos próprios e universais que representam as sentenças/afirmações.\n- $\\forall$ lê-se \"qualquer que seja\", \"para todo\": **quantificador universal**\n- **Quantificador existencial**: $\\exists$ lê-se \"existe\"; $\\nexists$ lemos \"não existe\"\n\nColocando-se $x \\in A$ ao lado de cada um dos quantificadores, temos:\n- $\\forall x \\in A$: qualquer que seja $x$ pertencente a A, ou para todo $x$ pertencente a A.\n- $\\exists x \\in A$: existe $x$ que pertence a A.\n- $\\nexists x \\in A$: não existe $x$ que pertença a A.\n\n### Subconjunto\nUm conjunto A é subconjunto de B se, e somente se, todo elemento de A pertence a B. Com a notação \"$A \\subset B$\" (**relação de inclusão**) indicamos que A está contido em B, ou que A é subconjunto de B. Já a notação \"$B \\supset A$\" significa que o conjunto B contém A. Em símbolos, ficamos:\n\n$$A \\subset B \\iff (\\forall x)(x \\in A \\text{ e } x \\in B)$$\n\na) $\\{a, b\\} \\subset \\{a, b, c, d\\}$; b) $\\{x, z\\} \\not\\subset \\{x, y, t\\}$\n\n---\n\n### E10\n**Enunciado:** A) $x + 2 = 5$, conjunto universo $U = \\{0, 1, 2, 3, 4\\}$. Qual o conjunto solução?\n\n**Solução:** O conjunto solução da equação $x + 2 = 5 \\to V = \\{3\\}$.\n\n**1) Determine o conjunto solução para cada sentença, e considere U o conjunto universo.**\nA) $2x + 1 = 9$, $U = \\{2, 3, 4, 5\\}$\nB) $x - 1 > 4$, $U = \\{3, 4, 5, 6, 7, 8\\}$\nC) $x^2 = 25$, $U = \\{-5, 0, 5, 10\\}$\nD) $x^2 = 9$, $U = \\{1, 2, 3, 4\\}$\nE) $x + z = y$, $U = \\{(1,3,2), (2,5,3), (4,6,2)\\}$\nF) $x < y$, $U = \\{(3,5), (5,3), (2,2), (1,4)\\}$\nG) $x + y = 5$, $U = \\{(1,4), (2,2), (3,2), (0,5)\\}$\n\n**2) Reflita e conclua.**\na) $(\\forall x)(x^3 = 2x^2)$\nb) $(\\forall a)((a+1)^2 = a^2 + 2a + 1)$\n\n---\n\n*(Outro quadro, revisão)*\n- Quantificador universal: $\\forall$ para todo $x$ / para qualquer que seja $x$\n- Relação existencial: $\\exists$ existe $x$; $\\nexists$ não existe $x$\n- Determinação de conjuntos: **enumeração** $\\{\\ \\}$: $A = \\{2, 3, 5, 7, 11\\}$, $n(A) = 5$; **propriedade**: $x \\mid x$ tem a propriedade $P$",
+      "aprofundamento": "### Pertinência × inclusão: a confusão nº 1\n- **Pertinência** ($\\in$, $\\notin$): entre um **elemento** e um **conjunto**. Ex.: $3 \\in \\{1, 2, 3\\}$.\n- **Inclusão** ($\\subset$, $\\not\\subset$, $\\supset$): entre dois **conjuntos**. Ex.: $\\{3\\} \\subset \\{1, 2, 3\\}$.\n\nEscrever $\\{3\\} \\in \\{1, 2, 3\\}$ está errado: $\\{3\\}$ é um conjunto, e ele não aparece como elemento ali dentro.\n\n### A definição de subconjunto\nA forma usual de escrever é com uma implicação:\n$$A \\subset B \\iff (\\forall x)(x \\in A \\Rightarrow x \\in B)$$\nLeitura: \"para todo $x$, **se** $x$ está em $A$, **então** está em $B$\". Na foto o conector do meio ficou como \"e\"; confira com o professor como ele quer que você escreva na prova.\n\nDuas consequências que caem muito:\n- Todo conjunto é subconjunto de si mesmo: $A \\subset A$.\n- O vazio é subconjunto de qualquer conjunto: $\\varnothing \\subset A$.\n\n### Vazio: $\\varnothing$ não é o mesmo que $\\{\\varnothing\\}$\n- $\\varnothing = \\{\\ \\}$ tem **0** elementos.\n- $\\{\\varnothing\\}$ tem **1** elemento (o próprio vazio). Por isso o professor riscou essa escrita.\n\n### Exercício 1 resolvido\nTeste cada elemento de $U$ na sentença e guarde os que deixam ela verdadeira.\n\n| | Sentença | Teste | Solução |\n|---|---|---|---|\n| A | $2x+1=9$ | só $x=4$ dá $9$ | $V=\\{4\\}$ |\n| B | $x-1>4$ | precisa $x>5$ | $V=\\{6, 7, 8\\}$ |\n| C | $x^2=25$ | $(-5)^2 = 5^2 = 25$ | $V=\\{-5, 5\\}$ |\n| D | $x^2=9$ | só $3^2=9$ (o $-3$ não está em $U$) | $V=\\{3\\}$ |\n| E | $x+z=y$ | lendo cada trio como $(x, y, z)$: $1+2=3$, $2+3=5$, $4+2=6$ | os três trios |\n| F | $x<y$ | $3<5$ e $1<4$ | $V=\\{(3,5), (1,4)\\}$ |\n| G | $x+y=5$ | $1+4$, $3+2$, $0+5$ | $V=\\{(1,4), (3,2), (0,5)\\}$ |\n\n**Atenção no D:** $x^2 = 9$ tem duas raízes reais ($\\pm 3$), mas o universo só tem positivos. O conjunto solução **depende do universo**.\n\n### Exercício 2 resolvido\n- **a)** $(\\forall x)(x^3 = 2x^2)$ é **falsa**. Basta um contraexemplo: $x = 1$ dá $1 = 2$, que é falso. A igualdade só vale para $x = 0$ e $x = 2$.\n- **b)** $(\\forall a)((a+1)^2 = a^2 + 2a + 1)$ é **verdadeira**: é o produto notável \"quadrado da soma\", vale para qualquer número.\n\n**Regra de ouro:** para derrubar um \"para todo\", um único contraexemplo basta. Para provar um \"existe\", um único exemplo basta.\n\n### Cardinalidade\n$n(A)$ é o número de elementos de $A$. Em $A = \\{2, 3, 5, 7, 11\\}$, $n(A) = 5$.",
+      "referencias": [
+        {
+          "titulo": "Teoria dos conjuntos: entenda o que é (com exemplos)",
+          "url": "https://www.todamateria.com.br/teoria-dos-conjuntos/",
+          "tipo": "artigo",
+          "descricao": "Toda Matéria"
+        },
+        {
+          "titulo": "Introdução ao estudo dos conjuntos",
+          "url": "https://www.preparaenem.com/matematica/introducao-ao-estudo-dos-conjuntos.htm",
+          "tipo": "artigo",
+          "descricao": "Prepara Enem"
+        },
+        {
+          "titulo": "Teoria dos conjuntos",
+          "url": "https://www.infoescola.com/matematica/teoria-dos-conjuntos",
+          "tipo": "artigo",
+          "descricao": "InfoEscola"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-13",
+      "data": "2026-08-13",
+      "data_aproximada": true,
+      "titulo": "Operações com conjuntos e conjuntos numéricos",
+      "topicos": [
+        "união e interseção",
+        "diferença",
+        "diagramas de venn",
+        "naturais e inteiros",
+        "racionais",
+        "frações"
+      ],
+      "fotos": [
+        "fotos/fotos-da-aula/2026-10-31/1566277450567000064-5.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277450567000064-6.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277450567000064-7.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277450567000064-8.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277450567000064-9.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277559971225734-0.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277559971225734-2.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277559971225734-3.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277559971225734-4.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277559971225734-5.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277559971225734-6.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277559971225734-7.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277776758276146-1.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277776758276146-2.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277776758276146-3.jpg"
+      ],
+      "resumo": "- **União** $A \\cup B$: tudo que está em A **ou** em B. **Interseção** $A \\cap B$: o que está nos **dois**.\n- **Diferença** $A - B$: o que é **só de A**. A ordem importa: $A - B \\neq B - A$.\n- **Diagrama de Venn**: comece pela interseção e vá para fora. Quem não está em nenhum fica no retângulo $U$.\n- $\\mathbb{N} = \\{0, 1, 2, 3, \\dots\\}$; $\\mathbb{N}^* = \\mathbb{N}$ sem o zero.\n- $\\mathbb{Z} = \\{\\dots, -2, -1, 0, 1, 2, \\dots\\}$.\n- $\\mathbb{Q}$: tudo que vira fração $\\frac{a}{b}$ com $a, b$ inteiros e $b \\neq 0$. Inclui inteiros, decimais exatos e dízimas periódicas.\n- Frações: $\\frac{a}{b} \\div \\frac{c}{d} = \\frac{ad}{bc}$; $\\frac{a}{b} = \\frac{c}{d} \\iff ad = bc$.",
+      "transcricao": "*Data não aparece nas fotos; aula entre 11/08 e 20/08.*\n\n## Slide: Operação: Diferença ($A - B$)\n*O que é só meu?*\n**Definição:** conjunto dos elementos que pertencem a A, mas **não** pertencem a B.\n$$\\{x \\mid x \\in A \\wedge x \\notin B\\}$$\n**Conceito:** exclusividade. No exemplo, A tem 1, 2, 3 e B tem 3, 4, 5: sobra $\\{1, 2\\}$ (o 3 é removido).\n**Atenção: a ordem importa!** $A - B \\neq B - A$ (tirar B de A é diferente de tirar A de B).\n\n## Quadro: diagrama de Venn\nPergunta (na TV): *Quantos não gostam de nenhum?*\n\n| F | V | F ∧ V |\n|---|---|---|\n| 30 | 25 | 10 |\n\nNo diagrama, dentro de $U$ (total 50): só F: $30 - 10 = 20$; F e V: $10$; só V: $25 - 10 = 15$.\n\n## Slide: Resumo dos símbolos\n$\\in$ pertence, $\\notin$ não pertence, $\\varnothing$ vazio, $\\subset$ contido, $\\not\\subset$ não contido, $U$ universo, $\\cup$ união, $\\cap$ interseção, $-$ diferença.\n\n## Conjuntos numéricos\n**Conjunto dos naturais:** $\\mathbb{N} = \\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, \\dots\\}$\n$\\mathbb{N}^* = \\{1, 2, 3, 4, 5, 6, 7, 8, \\dots\\}$\n- $\\mathbb{N}^* \\subset \\mathbb{N}$\n- $0 \\notin \\mathbb{N}^*$\n\n**Conjunto dos inteiros:** $\\mathbb{Z} = \\{\\dots, -3, -2, -1, 0, 1, 2, 3, \\dots\\}$\n\n## Slide: Números racionais\nTodo número que pode ser escrito na forma de fração: $\\mathbb{Q} = \\{x \\mid x = a/b\\}$, onde $a$ e $b$ são inteiros e $b \\neq 0$.\nO símbolo $\\mathbb{Q}$ vem de *Quociente* (resultado de uma divisão).\n- **Inteiros:** todo inteiro é racional, pois pode ser escrito como fração com denominador 1. Ex.: $5 = 5/1$\n- **Decimais exatos:** números com fim após a vírgula. Ex.: $0{,}5 = 1/2$; $1{,}25 = 5/4$\n- **Dízimas periódicas:** infinitos, mas com repetição lógica. Ex.: $0{,}333\\dots = 1/3$\n\n## Quadro: operações com racionais\nVamos considerar os racionais $\\frac{a}{b}, \\frac{c}{d}$, com $b, d \\neq 0$, temos:\n**Multiplicação:** $\\frac{a}{b} \\times \\frac{c}{d} = \\frac{a \\times c}{b \\times d} = \\frac{ac}{bd}$\n**Divisões:** $\\frac{a}{b} \\div \\frac{c}{d} = \\dfrac{\\left(\\frac{a}{b}\\right)}{\\left(\\frac{c}{d}\\right)} = \\frac{a}{b} \\cdot \\frac{d}{c} = \\frac{ad}{bc}$\n**Igualdade de frações:** sejam os racionais $\\frac{a}{b}$ e $\\frac{c}{d}$, $b, d \\neq 0$:\n$\\frac{a}{b} = \\frac{c}{d}$, P.F.P. (princípio fundamental da proporção) $\\to$ $ad = bc$. Dem.:\n$$\\frac{a}{b} = \\frac{c}{d} \\xrightarrow{\\ \\cdot (b \\cdot d)\\ } \\frac{a \\cdot (b \\cdot d)}{b} = \\frac{c \\cdot (b \\cdot d)}{d} \\Rightarrow ad = cb \\Rightarrow ad = bc$$\n\n*(Caderno: $\\overline{AB} = 4$, $\\overline{CD} = 2$, $\\frac{\\overline{AB}}{\\overline{CD}} = \\frac{4}{2} = 2$.)*\n\n## Desafio\nCalcule o valor da expressão: $1{,}08 \\times 0{,}9 + 2{,}04 \\div 9{,}4$\nA qual conjunto numérico pertence o resultado?\n\n---\n\n## Boa noite! Desafio (3 conjuntos)\n| A | G | E | A e G | A e E | A, G e E |\n|---|---|---|---|---|---|\n| 25 | 22 | 20 | 10 | 8 | 5 |\n\n| G e E |\n|---|\n| 7 |\n\n*(A pergunta do desafio não aparece na foto.)*\n\n## Quadro: F e N\nF e N: 30. Diagrama: só F: $120 - 30 = 90$; F e N: $30$; só N: $165 - 30 = 135$; fora: $90$.\n$$90 + 30 + 135 + 90 = 345 \\quad \\text{(alternativa C)}$$\n\n## Problema\nUm curso de engenharia de produção tem 140 alunos matriculados, sendo que 50 alunos deles estão na disciplina Álgebra Linear, 60 em Termodinâmica e 80 em Desenho Técnico. Desses alunos, 10 cursam as disciplinas Álgebra Linear e Termodinâmica, 30 cursam Álgebra Linear e Desenho Técnico, 15 cursam Termodinâmica e Desenho Técnico e 5 cursam as três disciplinas simultaneamente.\nNo entanto, o coordenador deseja saber: quantos alunos cursam ao menos uma disciplina?",
+      "aprofundamento": "### As três operações num só exemplo\n$A = \\{1, 2, 3\\}$ e $B = \\{3, 4, 5\\}$:\n\n| Operação | Resultado | Pergunta que responde |\n|---|---|---|\n| $A \\cup B$ | $\\{1, 2, 3, 4, 5\\}$ | está em pelo menos um? |\n| $A \\cap B$ | $\\{3\\}$ | está nos dois? |\n| $A - B$ | $\\{1, 2\\}$ | é só de A? |\n| $B - A$ | $\\{4, 5\\}$ | é só de B? |\n\n### Receita do diagrama de Venn\n1. Escreva primeiro a **interseção** (o que é comum).\n2. Para cada conjunto, desconte a interseção: \"só F\" $= n(F) - n(F \\cap V)$.\n3. Some tudo que está dentro dos círculos.\n4. **Fora** dos círculos $= $ total $-$ (soma de dentro).\n\n**Fórmula da união (2 conjuntos):** $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$\n\n### Problema do quadro resolvido: \"quantos não gostam de nenhum?\"\n$n(F \\cup V) = 30 + 25 - 10 = 45$. Fora: $50 - 45 = $ **5**.\n\n### Problema com 3 conjuntos (engenharia de produção)\nComece **de dentro para fora**:\n- As três: $5$\n- Só AL e T: $10 - 5 = 5$; só AL e DT: $30 - 5 = 25$; só T e DT: $15 - 5 = 10$\n- Só AL: $50 - 5 - 25 - 5 = 15$; só T: $60 - 5 - 10 - 5 = 40$; só DT: $80 - 25 - 10 - 5 = 40$\n\nSoma: $15 + 40 + 40 + 5 + 25 + 10 + 5 = $ **140**. Todos os 140 cursam ao menos uma.\n\nConferindo pela fórmula: $50 + 60 + 80 - 10 - 30 - 15 + 5 = 140$.\n\n### Desafio A, G, E\nA pergunta não saiu na foto. Com os dados: $n(A \\cup G \\cup E) = 25 + 22 + 20 - 10 - 8 - 7 + 5 = 47$. Só A: $25 - 5 - 3 - 5 = 12$ (onde $3 = 8 - 5$ é \"só A e E\").\n\n### Desafio da expressão\n$1{,}08 \\times 0{,}9 = 0{,}972$ e $2{,}04 \\div 9{,}4 = \\frac{204}{940} = \\frac{51}{235} \\approx 0{,}217$.\nTotal $\\approx 1{,}189$. Como é soma de frações de inteiros, o resultado é **racional** ($\\in \\mathbb{Q}$), mas não é inteiro. Como $235 = 5 \\cdot 47$, a parte decimal é uma **dízima periódica**.\n\n### Frações: o macete do \"meio por meio, ponta por ponta\"\n$\\frac{a}{b} \\div \\frac{c}{d}$: conserva a primeira e multiplica pelo inverso da segunda. Ex.: $\\frac{3}{4} \\div \\frac{2}{5} = \\frac{3}{4} \\cdot \\frac{5}{2} = \\frac{15}{8}$.\n\nIgualdade: $\\frac{2}{3} = \\frac{6}{9}$ porque $2 \\cdot 9 = 3 \\cdot 6 = 18$.",
+      "referencias": [
+        {
+          "titulo": "Teoria dos conjuntos: entenda o que é (com exemplos)",
+          "url": "https://www.todamateria.com.br/teoria-dos-conjuntos/",
+          "tipo": "artigo",
+          "descricao": "Toda Matéria"
+        },
+        {
+          "titulo": "Introdução ao estudo dos conjuntos",
+          "url": "https://www.preparaenem.com/matematica/introducao-ao-estudo-dos-conjuntos.htm",
+          "tipo": "artigo",
+          "descricao": "Prepara Enem"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-20",
+      "data": "2026-08-20",
+      "titulo": "Números reais e intervalos",
+      "topicos": [
+        "irracionais",
+        "reta real",
+        "intervalos",
+        "união e interseção de intervalos"
+      ],
+      "fotos": [
+        "fotos/fotos-da-aula/2026-10-31/1566277559971225734-8.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277559971225734-9.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277696361857115-0.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277696361857115-1.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277696361857115-2.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277696361857115-3.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277696361857115-4.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277696361857115-5.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277696361857115-6.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277696361857115-7.jpg"
+      ],
+      "resumo": "- $\\mathbb{N}$ conta, $\\mathbb{Z}$ inclui negativos, $\\mathbb{Q}$ mede (frações).\n- A diagonal de um quadrado de lado 1 mede $\\sqrt{2} \\approx 1{,}41$, que **não** é fração: é **irracional** ($\\mathbb{I}$).\n- **Reais**: $\\mathbb{R} = \\mathbb{Q} \\cup \\mathbb{I}$. Preenchem a reta inteira (conjunto **denso**).\n- **Intervalos**: colchete $[\\ ]$ inclui a ponta; parêntese $(\\ )$ não inclui. **Infinito sempre com parêntese.**\n- União e interseção de intervalos: desenhe na reta e veja onde sobrepõe.",
+      "transcricao": "*Fotos do caderno de um colega, 20/08/2026.*\n\n## Cálculo 1: intervalos, ponto de vista real\n### Intervalo na reta\n- $\\mathbb{N} = \\{0, 1, 2, 3, 4, 5, 6, \\dots\\}$, naturais: conjunto das contagens (ovelhinhas)\n- $\\mathbb{Z} = \\{\\dots, -3, -2, -1, 0, 1, 2, 3, \\dots\\}$, inteiros: conjunto das transações comerciais\n- $\\mathbb{Q} = \\{\\frac{a}{b},\\ a \\text{ e } b \\in \\mathbb{Z},\\ b \\neq 0\\}$, racionais: conjunto das medidas\n\n$\\frac{\\overline{AB}}{\\overline{CD}} = k \\Rightarrow \\overline{AB} = k \\cdot \\overline{CD}$ (cabe $k$ vezes em $\\overline{AB}$)\n\nQuadrado de lado 1 sobre o eixo real ($\\mathbb{R}$): $d = \\sqrt{a^2 + b^2}$, $d = \\sqrt{2} \\cong 1{,}41$\n**Qual é a interpretação geométrica?** Esse número não pode ser escrito como uma razão, isto é: $\\frac{a}{b} = \\sqrt{2}$.\n\n1º O conjunto dos racionais são comensuráveis\n2º O número $\\sqrt{2}$ [no caderno: $\\in \\mathbb{Q}$], $\\sqrt{2}$ é incomensurável\n\nRetângulo $4 \\times 3$: $d = \\sqrt{16 + 9} = \\sqrt{25} \\Rightarrow d = 5$; $\\frac{d}{b} = k \\Rightarrow d = b \\cdot k$; $b = 4$; $\\frac{5}{4} = 1{,}25$\n\n$\\mathbb{I}$: conjunto em que $x \\neq$ do conjunto dos racionais.\n**Por consequência:** o conjunto dos reais é a união dos racionais e irracionais. Em notação temos: $\\mathbb{R} = \\mathbb{Q} + \\mathbb{I}$\n*(Reta real com $-3, -2, -1$ marcados como $\\mathbb{Z}$; $1, 2, 3$ como $\\mathbb{N}$; $\\sqrt{2}$ como $\\mathbb{I}$; $\\frac{3}{2}$ como $\\mathbb{Q}$.)*\n\n∴ O conjunto dos reais representa todos os pontos da reta numérica. Por esse motivo dizemos ser um **conjunto denso**.\n\nConsidere a reta real: $2(\\overline{OA}) = 2(1) = 2$; $3(\\overline{OA}) = 3(1) = 3$\n**Segmentos por frações:** $z = \\frac{0 + 1}{2} = \\frac{1}{2}$; $z_1 = \\frac{1 + 2}{2} = \\frac{3}{2}$\n$z_1 \\in \\overline{AB}$? sim. $z_1 \\in \\overline{OA}$? não.\n\n### Intervalos reais\n- $[a, b] = \\{x \\in \\mathbb{R} \\mid a \\le x \\le b\\}$\n- $[a, b) = \\{x \\in \\mathbb{R} \\mid a \\le x < b\\}$\n- $(a, b] = \\{x \\in \\mathbb{R} \\mid a < x \\le b\\}$\n- $(a, b) = \\{x \\in \\mathbb{R} \\mid a < x < b\\}$\n- $[a, \\infty) = \\{x \\in \\mathbb{R} \\mid x \\ge a\\}$\n- $(a, \\infty] = \\{x \\in \\mathbb{R} \\mid x > a\\}$ *(assim no caderno)*\n- $(-\\infty, a] = \\{x \\in \\mathbb{R} \\mid x \\le a\\}$\n- $(-\\infty, a) = \\{x \\in \\mathbb{R} \\mid x < a\\}$\n- $(-\\infty, +\\infty) = \\mathbb{R}$\n\n### Aplicação\n1) Represente em uma reta numérica os conjuntos indicados abaixo (cada conjunto deve ser representado em uma reta numérica):\na) $[1, 2] \\cup [3, \\frac{17}{2}]$ ($\\frac{17}{2} = 8{,}5$)\nb) $[-2, 3] \\cap (3, 6)$\nc) $[-3, -1) \\cap [-2, +\\infty)$\n\n2) Represente em uma reta numérica os conjuntos:\na) $\\{x \\in \\mathbb{R} \\mid 0 \\le x < 3\\}$\n[ilegível: demais itens nas páginas seguintes]",
+      "aprofundamento": "### Dois detalhes do caderno para conferir\n- O caderno diz \"$\\sqrt{2} \\in \\mathbb{Q}$\", mas o próprio raciocínio da aula mostra o contrário: $\\sqrt{2}$ **não** é racional ($\\sqrt{2} \\notin \\mathbb{Q}$, ou $\\sqrt{2} \\in \\mathbb{I}$).\n- O caderno escreveu $(a, \\infty]$. Infinito **não é número**, então nunca \"fecha\": o certo é $(a, +\\infty)$.\n\n### Comensurável × incomensurável\nDois segmentos são **comensuráveis** quando a razão entre eles é uma fração (racional). A diagonal e o lado de um quadrado **não** são: $\\frac{\\text{diagonal}}{\\text{lado}} = \\sqrt{2}$. Foi assim que os gregos descobriram os irracionais.\n\n### Hierarquia dos conjuntos\n$$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R} \\qquad \\mathbb{I} \\subset \\mathbb{R} \\qquad \\mathbb{Q} \\cap \\mathbb{I} = \\varnothing$$\n\nExemplos de irracionais: $\\sqrt{2}$, $\\sqrt{3}$, $\\pi$, $e$. Raiz exata como $\\sqrt{25} = 5$ é racional.\n\n### Intervalos: a tabelinha da prova\n| Notação | Desigualdade | Na reta |\n|---|---|---|\n| $[a, b]$ | $a \\le x \\le b$ | bolinha cheia nas duas |\n| $(a, b)$ | $a < x < b$ | bolinha vazia nas duas |\n| $[a, +\\infty)$ | $x \\ge a$ | cheia em $a$, seta para a direita |\n| $(-\\infty, a)$ | $x < a$ | vazia em $a$, seta para a esquerda |\n\n### Exercício 1 resolvido\n- **a)** $[1, 2] \\cup [3; 8{,}5]$: são dois pedaços separados (de 2 a 3 fica um buraco). Não dá para juntar num intervalo só.\n- **b)** $[-2, 3] \\cap (3, 6) = \\varnothing$. O 3 está no primeiro, mas **não** no segundo (parêntese). Não sobra nada em comum.\n- **c)** $[-3, -1) \\cap [-2, +\\infty) = [-2, -1)$. A parte comum começa em $-2$ (incluso nos dois) e termina antes de $-1$.\n\n**Erro comum (aparece no caderno):** listar só inteiros, como \"$-2, -1, 0, 1, 2, 3$\". Intervalo é de **números reais**: entre $0$ e $1$ tem infinitos números ($0{,}5$; $0{,}01$; $\\frac{1}{3}$…).\n\n### Exercício 2a\n$\\{x \\in \\mathbb{R} \\mid 0 \\le x < 3\\} = [0, 3)$: bolinha cheia no 0, vazia no 3.",
+      "referencias": [
+        {
+          "titulo": "Teoria dos conjuntos",
+          "url": "https://www.infoescola.com/matematica/teoria-dos-conjuntos",
+          "tipo": "artigo",
+          "descricao": "InfoEscola"
+        },
+        {
+          "titulo": "Cálculo de Funções de Uma Variável (livro aberto)",
+          "url": "https://www.ufrgs.br/reamat/Calculo/livro-cfuv/main.html",
+          "tipo": "livro",
+          "descricao": "REAMAT/UFRGS"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-25",
+      "data": "2026-08-25",
+      "data_aproximada": true,
+      "titulo": "Funções: a ideia, o plano cartesiano e a definição",
+      "topicos": [
+        "função",
+        "plano cartesiano",
+        "quadrantes",
+        "par ordenado",
+        "lei de formação"
+      ],
+      "fotos": [
+        "fotos/fotos-da-aula/2026-10-31/1566277776758276146-4.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277776758276146-7.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277776758276146-9.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277838242582538-0.jpg"
+      ],
+      "resumo": "- Função **modela uma situação**: o valor de uma coisa depende de outra.\n- Estacionamento a R\\$ 22,00 por diária: $V(t) = 22$ para $0 < t \\le 24$ (**função constante**).\n- Taxa fixa de R\\$ 45,00 + R\\$ 32,00 por hora: $P(x) = 32x + 45$. Para 3 horas, $P(3) = 141$.\n- **Plano cartesiano**: dois eixos perpendiculares (ortogonais), criados a partir das ideias de Descartes e Fermat.\n- **Quadrantes**: 1º $(+,+)$, 2º $(-,+)$, 3º $(-,-)$, 4º $(+,-)$.\n- **Par ordenado** $P(a, b)$: $a$ é a **abscissa** ($x$), $b$ é a **ordenada** ($y$).\n- **Função** de A em B: cada $x \\in A$ se liga a um $y \\in B$, com $y = f(x)$.",
+      "transcricao": "## Boa noite! Tema: Função\nVamos imaginar a seguinte situação:\nUm estacionamento cobra R\\$ 22,00 por uma diária de até 24 horas, independente do número de horas utilizadas.\nSe $V \\to$ valor em relação ao tempo de permanência, podemos modelar a situação:\n$$V(\\text{tempo}) = 22$$\n\n**Função constante**\n$V(\\text{tempo}) = 22$, $\\quad 0 < \\text{tempo} \\le 24$\n*(Gráfico: reta horizontal na altura 22, com $t = 1, 2, 3, 4$ marcados no eixo.)*\n\n## Situação 2\nVamos supor uma copiadora cobra 0,35 por página. Supondo ainda que $x$ representa o nº de cópias solicitadas, temos: [continuação não aparece na foto]\n\n## Boa noite! Tema: Função\n→ **Eixos ortogonais: Plano Cartesiano**\n- René Descartes (1596–1650)\n- Fermat (1607–1665)\n\n*(Plano com os quadrantes)*\n- 1º quadrante $(x > 0, y > 0)$\n- 2º quadrante $(x < 0, y > 0)$\n- 3º quadrante $(x < 0, y < 0)$\n- 4º quadrante $(x > 0, y < 0)$\n\n**Par ordenado:** $P(a, b)$; $x \\Rightarrow$ abscissa; $y \\Rightarrow$ ordenada\n\n## Situação 3\n- Cobra 45,00\n- 32,00 por hora\n- Função: Preço $= 32 \\cdot \\text{hora} + 45$\n$$P(x) = 32x + 45$$\n- Três horas:\n$$P(3) = 32(3) + 45 = 96 + 45 = 141 \\text{ reais}$$\n\n## Def.\nDizemos que uma relação de A em B estabelece a seguinte condição:\n$$f: \\{(x, y),\\ x \\in A \\text{ e } y \\in B \\text{ e } y = f(x)\\}$$\n$$y = f(x) \\qquad\\qquad y = 32x + 45$$",
+      "aprofundamento": "### Por que \"função\"?\nFunção é uma regra que, para **cada** entrada $x$, devolve **exatamente uma** saída $y$. Pense numa máquina: entra o número de horas, sai o preço.\n\n| Situação | Lei | Tipo |\n|---|---|---|\n| Estacionamento (diária) | $V(t) = 22$ | constante |\n| Copiadora (R\\$ 0,35 por página) | $f(x) = 0{,}35x$ | linear |\n| Taxa fixa + por hora | $P(x) = 32x + 45$ | afim |\n\nA lei da copiadora não aparece na foto; $f(x) = 0{,}35x$ é a conclusão natural do enunciado. Ex.: 100 cópias custam $f(100) = 35$ reais.\n\n### Calculando valores\n$P(x) = 32x + 45$:\n- 1 hora: $P(1) = 77$\n- 3 horas: $P(3) = 141$\n- 5 horas: $P(5) = 205$\n\nE ao contrário: se a conta deu R\\$ 237, quantas horas? $32x + 45 = 237 \\Rightarrow 32x = 192 \\Rightarrow x = 6$.\n\n### Plano cartesiano: o truque dos sinais\nLembre do sentido anti-horário a partir do canto de cima à direita: **1º (+,+) → 2º (−,+) → 3º (−,−) → 4º (+,−)**.\nPontos **sobre os eixos** não estão em nenhum quadrante. Ex.: $(0, 5)$ está no eixo $y$.\n\n### Abscissa e ordenada\nEm $P(3, -2)$: abscissa $3$ (anda no eixo $x$), ordenada $-2$ (anda no eixo $y$). Está no **4º quadrante**.",
+      "referencias": [
+        {
+          "titulo": "Cálculo de Funções de Uma Variável (livro aberto)",
+          "url": "https://www.ufrgs.br/reamat/Calculo/livro-cfuv/main.html",
+          "tipo": "livro",
+          "descricao": "REAMAT/UFRGS"
+        }
+      ]
+    },
+    {
+      "id": "2026-08-27",
+      "data": "2026-08-27",
+      "data_aproximada": true,
+      "titulo": "Representação de funções e valor numérico",
+      "topicos": [
+        "notação de função",
+        "diagrama de flechas",
+        "imagem",
+        "valor numérico",
+        "racionalização"
+      ],
+      "fotos": [
+        "fotos/fotos-da-aula/2026-10-31/1566277838242582538-2.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277838242582538-3.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277838242582538-4.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277838242582538-5.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277838242582538-6.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277838242582538-7.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277838242582538-8.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277838242582538-9.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277909407080508-0.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277909407080508-1.jpg"
+      ],
+      "resumo": "- Duas formas de representar: **notação algébrica** ($f: A \\to B$, $x \\mapsto f(x)$) e **diagrama de flechas**.\n- **Imagem** $Im(f)$: os elementos de B que recebem flecha.\n- **Valor numérico**: troque $x$ pelo número e faça a conta.\n  - $f(x) = \\frac{1}{2}x - \\frac{1}{5}$ em $x = \\frac{2}{3}$: $\\frac{2}{15}$\n  - $f(x) = 2 - \\frac{1}{x-2}$ em $x = -3$: $\\frac{11}{5}$\n  - $f(x) = \\frac{1}{\\sqrt{x^2 - 1}}$ em $x = 3$: $\\frac{\\sqrt{2}}{4}$\n- **Racionalizar**: tirar a raiz do denominador multiplicando em cima e embaixo pela raiz.",
+      "transcricao": "## Boa noite! Tema: Função\nTemos duas formas de representar as funções:\n**1º Em notação algébrica:**\n$$f: A \\to B \\qquad A \\xrightarrow{\\ f\\ } B \\qquad \\text{ou} \\qquad x \\mapsto f(x)$$\n\n**2º Diagrama de flechas**\n*(Conjuntos A e B com flechas de A para B; a parte de B que recebe flechas é marcada como $Im(f)$, $f(x)$.)*\n\nSeja $A = \\{1, 2, 3, 4\\}$ e $B = \\{2, 3, 4, 5\\}$, $f$ dada pelo diagrama a seguir é uma relação de A em B.\n*(Diagrama com flechas de A para B; [flechas parcialmente ilegíveis]; $y = Im(f)$.)*\n\n## E2\nCalcular o valor numérico das funções:\n**a)** $f(x) = \\frac{1}{2}x - \\frac{1}{5}$, $x = \\frac{2}{3}$\nSolução: $f\\left(\\frac{2}{3}\\right) = \\frac{1}{2}\\left(\\frac{2}{3}\\right) - \\frac{1}{5} \\Rightarrow \\frac{1}{3} - \\frac{1}{5} \\Rightarrow \\frac{5 - 3}{15} = \\frac{2}{15}$\n\n**b)** $f(x) = 2 - \\frac{1}{x - 2}$, $x = -3$\n$f(-3) = 2 - \\frac{1}{-3 - 2}$\n$f(-3) = 2 - \\left(-\\frac{1}{5}\\right)$\n$f(-3) = 2 + \\frac{1}{5}$\n*(No canto: $\\frac{2}{1} + \\frac{1}{5} = \\frac{10 + 1}{5}$)*\n\n**c)** $f(x) = \\frac{1}{\\sqrt{x^2 - 1}}$, $x = 3$\n$f(3) = \\frac{1}{\\sqrt{3^2 - 1}}$\n$f(3) = \\frac{1}{\\sqrt{8}} \\cdot \\frac{\\sqrt{8}}{\\sqrt{8}}$\n$f(3) = \\frac{\\sqrt{8}}{8} = \\frac{\\sqrt{2} \\cdot \\sqrt{4}}{8} = \\frac{\\sqrt{2}}{4}$\n\n*(Diagrama: $f = 2 - \\frac{1}{x-2}$ levando $\\frac{2}{3}$ e $-3$ em $Im(f)$, com $\\frac{2}{15}$ marcado.)*\n\n### Lembretes no canto do quadro\n$$\\sqrt[n]{a} \\cdot \\sqrt[n]{b} = \\sqrt[n]{a \\cdot b}$$\n**Racionalização:** $\\frac{1}{\\sqrt[n]{a}} \\cdot \\frac{\\sqrt[n]{a}}{\\sqrt[n]{a}} = \\dots$ [ilegível]",
+      "aprofundamento": "### Domínio, contradomínio e imagem\nEm $f: A \\to B$:\n- **Domínio** $D(f) = A$: de onde saem as flechas. **Todo** elemento de A precisa sair com **uma** flecha.\n- **Contradomínio** $CD(f) = B$: para onde as flechas podem ir.\n- **Imagem** $Im(f) \\subset B$: só os elementos que **recebem** flecha.\n\n**É função?** Não é se algum $x$ do domínio fica sem flecha, ou se sai com duas.\n\n### Valor numérico passo a passo\n**b)** $f(-3) = 2 - \\frac{1}{-3 - 2} = 2 - \\frac{1}{-5} = 2 + \\frac{1}{5} = \\frac{10}{5} + \\frac{1}{5} = \\frac{11}{5}$\n\nCuidado com o sinal: menos com menos vira mais.\n\n**c)** $f(3) = \\frac{1}{\\sqrt{9 - 1}} = \\frac{1}{\\sqrt{8}}$. Racionalizando:\n$$\\frac{1}{\\sqrt{8}} \\cdot \\frac{\\sqrt{8}}{\\sqrt{8}} = \\frac{\\sqrt{8}}{8} = \\frac{2\\sqrt{2}}{8} = \\frac{\\sqrt{2}}{4}$$\n(porque $\\sqrt{8} = \\sqrt{4 \\cdot 2} = 2\\sqrt{2}$)\n\n### Quando a função não existe\n- $f(x) = 2 - \\frac{1}{x - 2}$ **não** existe em $x = 2$ (divisão por zero).\n- $f(x) = \\frac{1}{\\sqrt{x^2 - 1}}$ precisa de $x^2 - 1 > 0$, ou seja, $x < -1$ ou $x > 1$.",
+      "referencias": [
+        {
+          "titulo": "Cálculo de Funções de Uma Variável (livro aberto)",
+          "url": "https://www.ufrgs.br/reamat/Calculo/livro-cfuv/main.html",
+          "tipo": "livro",
+          "descricao": "REAMAT/UFRGS"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-01",
+      "data": "2026-09-01",
+      "data_aproximada": true,
+      "titulo": "Função constante, afim, linear e identidade",
+      "topicos": [
+        "função constante",
+        "função afim",
+        "coeficiente angular",
+        "função linear",
+        "função identidade",
+        "trigonometria"
+      ],
+      "fotos": [
+        "fotos/fotos-da-aula/2026-10-31/1566277909407080508-3.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277909407080508-4.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277909407080508-5.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277909407080508-6.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277909407080508-7.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277909407080508-8.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566277909407080508-9.jpg"
+      ],
+      "resumo": "- **Constante**: $f(x) = k$. Gráfico: reta horizontal.\n- **Afim** (1º grau): $f(x) = ax + b$. $a$ = coeficiente **angular** (inclinação), $b$ = coeficiente **linear** (onde corta o eixo $y$).\n- **Linear**: afim com $b = 0$: $f(x) = ax$. Passa pela origem.\n- **Identidade**: $a = 1$ e $b = 0$: $f(x) = x$. Inclinação de $45°$.\n- $a = \\operatorname{tg}\\alpha = \\frac{\\Delta y}{\\Delta x}$. Ex.: $f(x) = 2x + 1$ tem $\\operatorname{tg}\\alpha = 2$, $\\alpha \\approx 63{,}44°$.",
+      "transcricao": "## Def. Função constante\nÉ toda função da forma $f(x) = k$, $k \\in \\mathbb{R}$.\n*(Gráfico: reta horizontal na altura $k$, com $x_1, x_2, x_3$ no eixo.)*\n**E1** a) $f(x) = 2$; b) $f(x) = 3$; c) $f(x) = -3$; d) $f(x) = \\frac{1}{2}$\n\n## Def. Função afim (polinomial)\nÉ toda função que tem lei de formação dada por: $f(x) = ax + b$,\n- $a \\to$ coeficiente angular\n- $b \\to$ coeficiente linear\n- $a \\to$ inclinação da reta em relação [ilegível]\n\n$a = 2$; $b = 1$: $f(x) = 2x + 1$\n\n| $x$ | $f(x) = 2x + 1$ | $y$ |\n|---|---|---|\n| $-1$ | $f(-1) = 2(-1) + 1$ | $-1$ |\n| $0$ | $f(0) = 2 \\cdot 0 + 1$ | $1$ |\n| $1$ | $f(1) = 2 \\cdot 1 + 1$ | $3$ |\n| $2$ | $f(2) = 2 \\cdot 2 + 1$ | $5$ |\n\n*(Gráfico de $y = 2x + 1$ com o triângulo $\\Delta y = 5 - 3$ e $\\Delta x = 2 - 1$.)*\n- $\\operatorname{sen}\\alpha = \\frac{\\text{cat. op.}}{\\text{hip.}}$\n- $\\cos\\alpha = \\frac{\\text{cat. ad.}}{\\text{hip.}}$\n- $\\operatorname{tg}\\alpha = \\frac{\\text{cat. op.}}{\\text{cat. ad.}}$\n\n$\\operatorname{tg}\\alpha = 2$; $\\operatorname{tg}^{-1}(2) = 63{,}44°$\n\n## Def. Função linear\nÉ um caso particular da função afim, com $b = 0$: $f(x) = ax + b \\to f(x) = ax$\n\n| $x$ | $f(x) = 2x$ | $y$ |\n|---|---|---|\n| $-1$ | $f(-1) = 2(-1)$ | $-2$ |\n| $0$ | $f(0) = 2(0)$ | $0$ |\n| $1$ | $f(1) = 2(1)$ | $2$ |\n| $2$ | $f(2) = 2(2)$ | $4$ |\n\n*(Gráfico: $y_1 = 2$, $y_2 = 4$, $4 - 2$ sobre $2 - 1$)*: $\\operatorname{tg}\\alpha = 2 \\Rightarrow 63{,}44°$\n\n$f(x) = 3x$:\n\n| $x$ | $f(x) = 3x$ | $y$ |\n|---|---|---|\n| $-1$ | $f(-1) = 3(-1)$ | $-3$ |\n| $0$ | $f(0) = 3(0)$ | $0$ |\n| $1$ | $f(1) = 3(1)$ | $3$ |\n| $2$ | $f(2) = 3(2)$ | $6$ |\n\n$\\operatorname{tg}\\alpha = \\frac{6 - 3}{2 - 1}$ $\\therefore \\operatorname{tg}\\alpha = 3 = 71{,}56°$\n\n## Def. Função identidade\nTambém é um caso particular da função polinomial do 1º grau, com $a = 1$ e $b = 0$: $f(x) = x$\n\n| $x$ | $f(x) = x$ | $y$ |\n|---|---|---|\n| $-1$ | $f(-1) = -1$ | $-1$ |\n| $0$ | $f(0) = 0$ | $0$ |\n| $1$ | $f(1) = 1$ | $1$ |\n| $2$ | $f(2) = 2$ | $2$ |\n\n$\\Delta y = 2 - 1 = 1$, $\\Delta x = 2 - 1 = 1$: $\\operatorname{tg}\\alpha = 1 = 45°$\n\n| | $30°$ | $45°$ | $60°$ |\n|---|---|---|---|\n| $\\operatorname{sen}\\alpha$ | $\\frac{1}{2}$ | $\\frac{\\sqrt{2}}{2}$ | $\\frac{\\sqrt{3}}{2}$ |\n| $\\cos\\alpha$ | $\\frac{\\sqrt{3}}{2}$ | $\\frac{\\sqrt{2}}{2}$ | $\\frac{1}{2}$ |",
+      "aprofundamento": "### Família da função do 1º grau\n| Nome | Lei | Gráfico |\n|---|---|---|\n| Constante | $f(x) = k$ | reta horizontal |\n| Afim | $f(x) = ax + b$, $a \\neq 0$ | reta inclinada, corta $y$ em $b$ |\n| Linear | $f(x) = ax$ | reta pela origem |\n| Identidade | $f(x) = x$ | bissetriz do 1º e 3º quadrantes |\n\n### Como achar $a$ e $b$ olhando o gráfico\n- $b$: onde a reta **corta o eixo $y$** (faça $x = 0$).\n- $a$: escolha dois pontos e calcule $a = \\frac{\\Delta y}{\\Delta x} = \\frac{y_2 - y_1}{x_2 - x_1}$.\n\n**Exemplo:** a reta passa por $(1, 3)$ e $(2, 5)$: $a = \\frac{5 - 3}{2 - 1} = 2$. Usando $(1, 3)$: $3 = 2 \\cdot 1 + b \\Rightarrow b = 1$. Logo $f(x) = 2x + 1$.\n\n### O sinal de $a$\n- $a > 0$: função **crescente** (reta sobe).\n- $a < 0$: função **decrescente** (reta desce).\n\n### Raiz (zero) da afim\nOnde a reta corta o eixo $x$: $ax + b = 0 \\Rightarrow x = -\\frac{b}{a}$. Em $f(x) = 2x + 1$: $x = -\\frac{1}{2}$.\n\n### $a$ é a tangente do ângulo\nO ângulo $\\alpha$ que a reta faz com o eixo $x$ tem $\\operatorname{tg}\\alpha = a$:\n- $a = 1 \\Rightarrow 45°$\n- $a = 2 \\Rightarrow \\approx 63{,}44°$\n- $a = 3 \\Rightarrow \\approx 71{,}56°$\n\nQuanto maior $a$, mais \"em pé\" a reta.",
+      "referencias": [
+        {
+          "titulo": "Cálculo de Funções de Uma Variável (livro aberto)",
+          "url": "https://www.ufrgs.br/reamat/Calculo/livro-cfuv/main.html",
+          "tipo": "livro",
+          "descricao": "REAMAT/UFRGS"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-03",
+      "data": "2026-09-03",
+      "data_aproximada": true,
+      "titulo": "Função quadrática",
+      "topicos": [
+        "função quadrática",
+        "concavidade",
+        "discriminante",
+        "fórmula resolutiva",
+        "vértice",
+        "imagem"
+      ],
+      "fotos": [
+        "fotos/fotos-da-aula/2026-10-31/1566278032677801984-0.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566278032677801984-1.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566278032677801984-2.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566278032677801984-3.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566278032677801984-4.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566278032677801984-5.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566278032677801984-6.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566278032677801984-7.jpg",
+        "fotos/fotos-da-aula/2026-10-31/1566278032677801984-9.jpg"
+      ],
+      "resumo": "- $f(x) = ax^2 + bx + c$, com $a \\neq 0$. Gráfico: **parábola**.\n- $a > 0$: concavidade para **cima**; $a < 0$: para **baixo**.\n- $c$: onde corta o eixo $y$, no ponto $(0, c)$.\n- $\\Delta = b^2 - 4ac$:\n  - $\\Delta > 0$: duas raízes reais diferentes\n  - $\\Delta = 0$: uma raiz dupla\n  - $\\Delta < 0$: nenhuma raiz real\n- Raízes: $x = \\frac{-b \\pm \\sqrt{\\Delta}}{2a}$.\n- Vértice: $V\\left(-\\frac{b}{2a}, -\\frac{\\Delta}{4a}\\right)$.\n- Imagem: $a > 0 \\Rightarrow [y_v, +\\infty)$; $a < 0 \\Rightarrow (-\\infty, y_v]$.",
+      "transcricao": "## Boa noite! Função quadrática\nÉ uma $f: \\mathbb{R} \\to \\mathbb{R}$ quadrática quando $f(x) = ax^2 + bx + c$, com $a, b$ e $c \\in \\mathbb{R}$, $a \\neq 0$.\n- $a \\to$ **coeficiente quadrático**: determina a concavidade e influencia a abertura da parábola\n- $b \\to$ **coeficiente linear**: participa do eixo de simetria e do vértice\n- $c \\to$ **termo independente**: $x = 0 \\Rightarrow f(0) = c \\Rightarrow$ intercepto com o eixo $y$\n\n- Se $a > 0$, a parábola tem concavidade para cima. $Im(f) = [y_v, \\infty)$\n- Se $a < 0$, a parábola tem concavidade baixo. $Im(f) = (-\\infty, y_v]$\n\n**Fórmula resolutiva**\n$$x = \\frac{-b \\pm \\sqrt{\\Delta}}{2 \\cdot a} \\qquad \\Delta = b^2 - 4ac$$\n\n**E1** $f(x) = x^2 - 4x + 5$. Identifique: $a = 1$, $b = -4$, $c = 5$. Como $a > 0$, concavidade para cima. Além disso, $x = 0 \\to f(0) = 5$, isto é, ponto de interseção: $(0, 5)$.\n\n→ **Discriminante ($\\Delta$)**\n- Se $\\Delta > 0$, duas raízes reais e distintas, $x_1$ e $x_2 \\Rightarrow x_1 \\neq x_2$ *(desenhos com $a > 0$ e $a < 0$)*\n- Se $\\Delta = 0$, temos duas raízes duplas, $x_1 = x_2$\n- Se $\\Delta < 0$, não há raízes\n\n## Situação de aprendizagem 1\nAnalise e preveja: a concavidade, o intercepto e os zeros das funções:\na) $f(x) = x^2 - 5x + 6$\nb) $f(x) = -x^2 + 4x - 3$\nc) $f(x) = 2x^2 + 4x + 5$\nd) $f(x) = x^2 - 6x + 9$\n\na) $a = 1 > 0$, $c = 6$; $x = \\frac{-(-5) \\pm \\sqrt{\\Delta}}{2}$; $x_1 = 3$, $x_2 = 2$\nc) $a = 2 > 0$; zero: $x = \\frac{4 \\pm \\sqrt{16 - 4(2)(5)}}{2 \\cdot 2}$; $x = \\frac{4 \\pm \\sqrt{16 - 40}}{4}$; $\\Delta < 0$ *(riscado)*\n\n## Boa noite! Função quadrática: construção da parábola\n**Coordenadas do vértice**\n*(Parábola com pontos $A_1$ e $A_2$ na mesma altura, em $x_v - k$ e $x_v + k$; eixo de simetria.)*\nCom $k \\in \\mathbb{R}$, $k \\neq 0$: $A_1 = A_2$; $y_{A_1} = y_{A_2}$\n$$y_{A_1} = ax^2 + bx + c = y_{A_2} = ax^2 + bx + c$$\n$x_1 = x_v - k$; $x_2 = x_v + k$\n$a(x_v - k)^2 + b(x_v - k) + c = a(x_v + k)^2 + b(x_v + k) + c$\n$a(x_v^2 - 2x_vk + k^2) + b(x_v - k) + c = a(x_v^2 + 2x_vk + k^2) + b(x_v + k) + c$\n$-2ax_vk - bk = 2ax_vk + bk$\n$-4ax_vk - 2bk$, $k = 1$\n$-4ax_v = 2b$\n$$\\therefore x_v = -\\frac{b}{2a}$$\n\n**Ordenada ($y_v$)**\n$y_v = a\\left(-\\frac{b}{2a}\\right)^2 + b\\left(-\\frac{b}{2a}\\right) + c$\n$y_v = \\frac{b^2}{4a} - \\frac{b^2}{2a} + c$\n$y_v = \\frac{b^2 - 2b^2 + 4ac}{4a} \\Rightarrow y_v = \\frac{-b^2 + 4ac}{4a} \\therefore y_v = -\\frac{\\Delta}{4a}$\n$$V(x_v, y_v) = \\left(-\\frac{b}{2a}, -\\frac{\\Delta}{4a}\\right)$$",
+      "aprofundamento": "### Uma observação sobre os nomes\nNo quadro, $b$ aparece como \"coeficiente linear\". Muitos livros chamam $c$ de termo independente e não dão nome especial a $b$; o importante é saber o **papel** de cada um:\n- $a$: concavidade (e o quanto a parábola é \"fechada\")\n- $b$: junto com $a$, decide **onde** fica o vértice ($x_v = -\\frac{b}{2a}$)\n- $c$: onde a parábola corta o eixo $y$\n\nTambém no quadro: \"se $\\Delta = 0$, temos duas raízes duplas\". O usual é dizer **uma raiz dupla** (as duas raízes são iguais, $x_1 = x_2$).\n\n### Situação de aprendizagem 1 resolvida\n| | Função | Concavidade | Corta $y$ em | $\\Delta$ | Zeros |\n|---|---|---|---|---|---|\n| a | $x^2 - 5x + 6$ | cima | $(0, 6)$ | $25 - 24 = 1$ | $2$ e $3$ |\n| b | $-x^2 + 4x - 3$ | baixo | $(0, -3)$ | $16 - 12 = 4$ | $1$ e $3$ |\n| c | $2x^2 + 4x + 5$ | cima | $(0, 5)$ | $16 - 40 = -24$ | não tem |\n| d | $x^2 - 6x + 9$ | cima | $(0, 9)$ | $36 - 36 = 0$ | $3$ (dupla) |\n\n**b) passo a passo:** $x = \\frac{-4 \\pm \\sqrt{4}}{2 \\cdot (-1)} = \\frac{-4 \\pm 2}{-2}$, logo $x_1 = 1$ e $x_2 = 3$. Cuidado com o $2a = -2$ no denominador.\n\n### E1 completo: $f(x) = x^2 - 4x + 5$\n- $\\Delta = 16 - 20 = -4 < 0$: **não** corta o eixo $x$.\n- Vértice: $x_v = -\\frac{-4}{2} = 2$; $y_v = -\\frac{-4}{4} = 1$. $V(2, 1)$.\n- Imagem: $[1, +\\infty)$.\n\n### Vértice: atalho\nEm vez de decorar $y_v = -\\frac{\\Delta}{4a}$, você pode calcular $x_v = -\\frac{b}{2a}$ e depois $y_v = f(x_v)$. Ex.: em (a), $x_v = \\frac{5}{2}$ e $f\\left(\\frac{5}{2}\\right) = \\frac{25}{4} - \\frac{25}{2} + 6 = -\\frac{1}{4}$.\n\n### Como desenhar a parábola na prova\n1. Concavidade (sinal de $a$).\n2. Ponto $(0, c)$.\n3. Raízes (se $\\Delta \\ge 0$).\n4. Vértice.\n5. Use a simetria: o eixo é a reta $x = x_v$.",
+      "referencias": [
+        {
+          "titulo": "Cálculo de Funções de Uma Variável (livro aberto)",
+          "url": "https://www.ufrgs.br/reamat/Calculo/livro-cfuv/main.html",
+          "tipo": "livro",
+          "descricao": "REAMAT/UFRGS"
+        }
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "2026-08-11-f1",
+      "aula": "2026-08-11",
+      "topico": "pertinência",
+      "frente": "O que significa $a \\in A$?",
+      "verso": "O elemento $a$ **pertence** ao conjunto $A$."
+    },
+    {
+      "id": "2026-08-11-f2",
+      "aula": "2026-08-11",
+      "topico": "pertinência",
+      "frente": "Quem introduziu o símbolo $\\in$?",
+      "verso": "Peano."
+    },
+    {
+      "id": "2026-08-11-f3",
+      "aula": "2026-08-11",
+      "topico": "elementos e notação",
+      "frente": "Como se representam elementos e conjuntos?",
+      "verso": "Elementos com letra **minúscula** ($a, x$); conjuntos com **maiúscula** ($A, B$)."
+    },
+    {
+      "id": "2026-08-11-f4",
+      "aula": "2026-08-11",
+      "topico": "determinação de conjuntos",
+      "frente": "Quais as duas formas de determinar um conjunto?",
+      "verso": "Por **enumeração** (listar entre chaves) ou por uma **propriedade** dos elementos."
+    },
+    {
+      "id": "2026-08-11-f5",
+      "aula": "2026-08-11",
+      "topico": "determinação de conjuntos",
+      "frente": "Como se lê $\\{x \\mid x \\text{ é par}\\}$?",
+      "verso": "\"Conjunto dos $x$ **tal que** $x$ é par.\""
+    },
+    {
+      "id": "2026-08-11-f6",
+      "aula": "2026-08-11",
+      "topico": "determinação de conjuntos",
+      "frente": "Quais as duas formas de escrever o conjunto vazio?",
+      "verso": "$\\{\\ \\}$ ou $\\varnothing$."
+    },
+    {
+      "id": "2026-08-11-f7",
+      "aula": "2026-08-11",
+      "topico": "determinação de conjuntos",
+      "frente": "Por que não se escreve $\\{\\varnothing\\}$ para o vazio?",
+      "verso": "Porque $\\{\\varnothing\\}$ tem **um** elemento (o vazio). Não é vazio."
+    },
+    {
+      "id": "2026-08-11-f8",
+      "aula": "2026-08-11",
+      "topico": "quantificadores",
+      "frente": "Como se lê $\\forall$?",
+      "verso": "\"Para todo\" ou \"qualquer que seja\". É o quantificador **universal**."
+    },
+    {
+      "id": "2026-08-11-f9",
+      "aula": "2026-08-11",
+      "topico": "quantificadores",
+      "frente": "Como se leem $\\exists$ e $\\nexists$?",
+      "verso": "\"Existe\" e \"não existe\". São quantificadores **existenciais**."
+    },
+    {
+      "id": "2026-08-11-f10",
+      "aula": "2026-08-11",
+      "topico": "subconjuntos",
+      "frente": "Quando $A \\subset B$?",
+      "verso": "Quando **todo** elemento de $A$ também pertence a $B$."
+    },
+    {
+      "id": "2026-08-11-f11",
+      "aula": "2026-08-11",
+      "topico": "subconjuntos",
+      "frente": "Diferença entre $\\in$ e $\\subset$?",
+      "verso": "$\\in$ relaciona **elemento** e conjunto. $\\subset$ relaciona **conjunto** e conjunto."
+    },
+    {
+      "id": "2026-08-11-f12",
+      "aula": "2026-08-11",
+      "topico": "conjunto solução",
+      "frente": "O que é o conjunto solução de uma sentença?",
+      "verso": "Os elementos do universo $U$ que tornam a sentença **verdadeira**."
+    },
+    {
+      "id": "2026-08-11-f13",
+      "aula": "2026-08-11",
+      "topico": "quantificadores",
+      "frente": "Como provar que um \"para todo\" é falso?",
+      "verso": "Basta **um contraexemplo**."
+    },
+    {
+      "id": "2026-08-13-f1",
+      "aula": "2026-08-13",
+      "topico": "união e interseção",
+      "frente": "$A \\cup B$",
+      "verso": "Tudo que está em A **ou** em B."
+    },
+    {
+      "id": "2026-08-13-f2",
+      "aula": "2026-08-13",
+      "topico": "união e interseção",
+      "frente": "$A \\cap B$",
+      "verso": "Só o que está em A **e** em B."
+    },
+    {
+      "id": "2026-08-13-f3",
+      "aula": "2026-08-13",
+      "topico": "diferença",
+      "frente": "$A - B$",
+      "verso": "O que está em A mas **não** em B."
+    },
+    {
+      "id": "2026-08-13-f4",
+      "aula": "2026-08-13",
+      "topico": "diferença",
+      "frente": "$A - B = B - A$?",
+      "verso": "**Não.** A ordem importa."
+    },
+    {
+      "id": "2026-08-13-f5",
+      "aula": "2026-08-13",
+      "topico": "diagramas de venn",
+      "frente": "Por onde começar um diagrama de Venn?",
+      "verso": "Pela **interseção**, de dentro para fora."
+    },
+    {
+      "id": "2026-08-13-f6",
+      "aula": "2026-08-13",
+      "topico": "diagramas de venn",
+      "frente": "Fórmula de $n(A \\cup B)$",
+      "verso": "$n(A) + n(B) - n(A \\cap B)$"
+    },
+    {
+      "id": "2026-08-13-f7",
+      "aula": "2026-08-13",
+      "topico": "naturais e inteiros",
+      "frente": "O que é $\\mathbb{N}^*$?",
+      "verso": "Os naturais **sem o zero**: $\\{1, 2, 3, \\dots\\}$."
+    },
+    {
+      "id": "2026-08-13-f8",
+      "aula": "2026-08-13",
+      "topico": "naturais e inteiros",
+      "frente": "$0 \\in \\mathbb{N}^*$?",
+      "verso": "**Não.** $0 \\notin \\mathbb{N}^*$."
+    },
+    {
+      "id": "2026-08-13-f9",
+      "aula": "2026-08-13",
+      "topico": "racionais",
+      "frente": "O que é um número racional?",
+      "verso": "Todo número que vira fração $\\frac{a}{b}$, com $a, b \\in \\mathbb{Z}$ e $b \\neq 0$."
+    },
+    {
+      "id": "2026-08-13-f10",
+      "aula": "2026-08-13",
+      "topico": "racionais",
+      "frente": "Por que a letra $\\mathbb{Q}$?",
+      "verso": "Vem de **quociente** (resultado de divisão)."
+    },
+    {
+      "id": "2026-08-13-f11",
+      "aula": "2026-08-13",
+      "topico": "racionais",
+      "frente": "$0{,}333\\dots$ é racional?",
+      "verso": "**Sim.** É dízima periódica: $\\frac{1}{3}$."
+    },
+    {
+      "id": "2026-08-13-f12",
+      "aula": "2026-08-13",
+      "topico": "frações",
+      "frente": "$\\frac{a}{b} \\div \\frac{c}{d}$",
+      "verso": "$\\frac{a}{b} \\cdot \\frac{d}{c} = \\frac{ad}{bc}$"
+    },
+    {
+      "id": "2026-08-13-f13",
+      "aula": "2026-08-13",
+      "topico": "frações",
+      "frente": "Quando $\\frac{a}{b} = \\frac{c}{d}$?",
+      "verso": "Quando $ad = bc$ (princípio fundamental da proporção)."
+    },
+    {
+      "id": "2026-08-20-f1",
+      "aula": "2026-08-20",
+      "topico": "irracionais",
+      "frente": "Diagonal de um quadrado de lado 1",
+      "verso": "$\\sqrt{2} \\approx 1{,}41$"
+    },
+    {
+      "id": "2026-08-20-f2",
+      "aula": "2026-08-20",
+      "topico": "irracionais",
+      "frente": "$\\sqrt{2}$ é racional?",
+      "verso": "**Não.** Não pode ser escrito como fração: é irracional."
+    },
+    {
+      "id": "2026-08-20-f3",
+      "aula": "2026-08-20",
+      "topico": "irracionais",
+      "frente": "O que é um número irracional?",
+      "verso": "Um número real que **não** pode ser escrito como fração de inteiros."
+    },
+    {
+      "id": "2026-08-20-f4",
+      "aula": "2026-08-20",
+      "topico": "reta real",
+      "frente": "$\\mathbb{R} = $ ?",
+      "verso": "$\\mathbb{Q} \\cup \\mathbb{I}$ (racionais mais irracionais)."
+    },
+    {
+      "id": "2026-08-20-f5",
+      "aula": "2026-08-20",
+      "topico": "reta real",
+      "frente": "Por que $\\mathbb{R}$ é chamado de denso?",
+      "verso": "Porque preenche **todos** os pontos da reta."
+    },
+    {
+      "id": "2026-08-20-f6",
+      "aula": "2026-08-20",
+      "topico": "reta real",
+      "frente": "$\\sqrt{25}$ é irracional?",
+      "verso": "**Não.** $\\sqrt{25} = 5$, racional."
+    },
+    {
+      "id": "2026-08-20-f7",
+      "aula": "2026-08-20",
+      "topico": "intervalos",
+      "frente": "Colchete × parêntese",
+      "verso": "Colchete **inclui** a ponta. Parêntese **não inclui**."
+    },
+    {
+      "id": "2026-08-20-f8",
+      "aula": "2026-08-20",
+      "topico": "intervalos",
+      "frente": "O infinito vai com colchete ou parêntese?",
+      "verso": "**Sempre parêntese.** Infinito não é número."
+    },
+    {
+      "id": "2026-08-20-f9",
+      "aula": "2026-08-20",
+      "topico": "intervalos",
+      "frente": "$[a, b)$ em desigualdade",
+      "verso": "$a \\le x < b$"
+    },
+    {
+      "id": "2026-08-20-f10",
+      "aula": "2026-08-20",
+      "topico": "intervalos",
+      "frente": "$(-\\infty, a]$ em desigualdade",
+      "verso": "$x \\le a$"
+    },
+    {
+      "id": "2026-08-20-f11",
+      "aula": "2026-08-20",
+      "topico": "união e interseção de intervalos",
+      "frente": "Como achar a interseção de dois intervalos?",
+      "verso": "Desenhe os dois na reta e pegue só a parte **sobreposta**."
+    },
+    {
+      "id": "2026-08-25-f1",
+      "aula": "2026-08-25",
+      "topico": "função",
+      "frente": "O que é uma função?",
+      "verso": "Uma regra que leva **cada** $x$ a **exatamente um** $y$."
+    },
+    {
+      "id": "2026-08-25-f2",
+      "aula": "2026-08-25",
+      "topico": "lei de formação",
+      "frente": "Taxa fixa de 45 + 32 por hora. Lei?",
+      "verso": "$P(x) = 32x + 45$"
+    },
+    {
+      "id": "2026-08-25-f3",
+      "aula": "2026-08-25",
+      "topico": "lei de formação",
+      "frente": "$P(3)$ em $P(x) = 32x + 45$",
+      "verso": "$96 + 45 = 141$"
+    },
+    {
+      "id": "2026-08-25-f4",
+      "aula": "2026-08-25",
+      "topico": "plano cartesiano",
+      "frente": "Quem deu origem ao plano cartesiano?",
+      "verso": "René Descartes (1596–1650), com ideias também de Fermat (1607–1665)."
+    },
+    {
+      "id": "2026-08-25-f5",
+      "aula": "2026-08-25",
+      "topico": "quadrantes",
+      "frente": "Sinais do 2º quadrante",
+      "verso": "$x < 0$ e $y > 0$"
+    },
+    {
+      "id": "2026-08-25-f6",
+      "aula": "2026-08-25",
+      "topico": "quadrantes",
+      "frente": "Sinais do 4º quadrante",
+      "verso": "$x > 0$ e $y < 0$"
+    },
+    {
+      "id": "2026-08-25-f7",
+      "aula": "2026-08-25",
+      "topico": "par ordenado",
+      "frente": "Em $P(a, b)$, o que é $a$?",
+      "verso": "A **abscissa** (coordenada $x$)."
+    },
+    {
+      "id": "2026-08-25-f8",
+      "aula": "2026-08-25",
+      "topico": "par ordenado",
+      "frente": "Em $P(a, b)$, o que é $b$?",
+      "verso": "A **ordenada** (coordenada $y$)."
+    },
+    {
+      "id": "2026-08-25-f9",
+      "aula": "2026-08-25",
+      "topico": "função",
+      "frente": "Estacionamento com diária fixa de R\\$ 22: que tipo de função?",
+      "verso": "**Constante**: $V(t) = 22$."
+    },
+    {
+      "id": "2026-08-27-f1",
+      "aula": "2026-08-27",
+      "topico": "notação de função",
+      "frente": "Como se lê $f: A \\to B$?",
+      "verso": "$f$ é uma função de A em B."
+    },
+    {
+      "id": "2026-08-27-f2",
+      "aula": "2026-08-27",
+      "topico": "diagrama de flechas",
+      "frente": "Quando um diagrama de flechas **não** é função?",
+      "verso": "Quando algum elemento de A fica sem flecha ou sai com mais de uma."
+    },
+    {
+      "id": "2026-08-27-f3",
+      "aula": "2026-08-27",
+      "topico": "imagem",
+      "frente": "O que é a imagem $Im(f)$?",
+      "verso": "Os elementos de B que **recebem** flecha."
+    },
+    {
+      "id": "2026-08-27-f4",
+      "aula": "2026-08-27",
+      "topico": "imagem",
+      "frente": "Domínio × contradomínio",
+      "verso": "Domínio: de onde saem as flechas (A). Contradomínio: para onde podem ir (B)."
+    },
+    {
+      "id": "2026-08-27-f5",
+      "aula": "2026-08-27",
+      "topico": "valor numérico",
+      "frente": "O que é calcular o valor numérico?",
+      "verso": "Substituir $x$ pelo número e fazer a conta. Ex.: $f(2)$."
+    },
+    {
+      "id": "2026-08-27-f6",
+      "aula": "2026-08-27",
+      "topico": "valor numérico",
+      "frente": "$f(x) = \\frac{1}{2}x - \\frac{1}{5}$ em $x = \\frac{2}{3}$",
+      "verso": "$\\frac{1}{3} - \\frac{1}{5} = \\frac{2}{15}$"
+    },
+    {
+      "id": "2026-08-27-f7",
+      "aula": "2026-08-27",
+      "topico": "racionalização",
+      "frente": "O que é racionalizar?",
+      "verso": "Tirar a raiz do denominador multiplicando em cima e embaixo pela raiz."
+    },
+    {
+      "id": "2026-08-27-f8",
+      "aula": "2026-08-27",
+      "topico": "racionalização",
+      "frente": "$\\frac{1}{\\sqrt{8}}$ racionalizado",
+      "verso": "$\\frac{\\sqrt{8}}{8} = \\frac{\\sqrt{2}}{4}$"
+    },
+    {
+      "id": "2026-09-01-f1",
+      "aula": "2026-09-01",
+      "topico": "função constante",
+      "frente": "Lei e gráfico da função constante",
+      "verso": "$f(x) = k$; reta **horizontal**."
+    },
+    {
+      "id": "2026-09-01-f2",
+      "aula": "2026-09-01",
+      "topico": "função afim",
+      "frente": "Lei da função afim",
+      "verso": "$f(x) = ax + b$, com $a \\neq 0$."
+    },
+    {
+      "id": "2026-09-01-f3",
+      "aula": "2026-09-01",
+      "topico": "coeficiente angular",
+      "frente": "O que $a$ indica em $f(x) = ax + b$?",
+      "verso": "A **inclinação**: $a = \\operatorname{tg}\\alpha = \\frac{\\Delta y}{\\Delta x}$."
+    },
+    {
+      "id": "2026-09-01-f4",
+      "aula": "2026-09-01",
+      "topico": "função afim",
+      "frente": "O que $b$ indica em $f(x) = ax + b$?",
+      "verso": "Onde a reta corta o eixo $y$: ponto $(0, b)$."
+    },
+    {
+      "id": "2026-09-01-f5",
+      "aula": "2026-09-01",
+      "topico": "função linear",
+      "frente": "Função linear",
+      "verso": "Afim com $b = 0$: $f(x) = ax$. Passa pela origem."
+    },
+    {
+      "id": "2026-09-01-f6",
+      "aula": "2026-09-01",
+      "topico": "função identidade",
+      "frente": "Função identidade",
+      "verso": "$f(x) = x$ ($a = 1$, $b = 0$). Ângulo de $45°$."
+    },
+    {
+      "id": "2026-09-01-f7",
+      "aula": "2026-09-01",
+      "topico": "coeficiente angular",
+      "frente": "$a > 0$ e $a < 0$",
+      "verso": "$a > 0$: crescente. $a < 0$: decrescente."
+    },
+    {
+      "id": "2026-09-01-f8",
+      "aula": "2026-09-01",
+      "topico": "função afim",
+      "frente": "Raiz da função afim",
+      "verso": "$x = -\\frac{b}{a}$"
+    },
+    {
+      "id": "2026-09-01-f9",
+      "aula": "2026-09-01",
+      "topico": "trigonometria",
+      "frente": "$\\operatorname{tg}\\alpha$ no triângulo retângulo",
+      "verso": "Cateto oposto sobre cateto adjacente."
+    },
+    {
+      "id": "2026-09-01-f10",
+      "aula": "2026-09-01",
+      "topico": "trigonometria",
+      "frente": "$\\operatorname{sen} 30°$ e $\\cos 60°$",
+      "verso": "Os dois valem $\\frac{1}{2}$."
+    },
+    {
+      "id": "2026-09-03-f1",
+      "aula": "2026-09-03",
+      "topico": "função quadrática",
+      "frente": "Lei da função quadrática",
+      "verso": "$f(x) = ax^2 + bx + c$, com $a \\neq 0$."
+    },
+    {
+      "id": "2026-09-03-f2",
+      "aula": "2026-09-03",
+      "topico": "concavidade",
+      "frente": "O que define a concavidade?",
+      "verso": "O sinal de $a$: $a > 0$ para cima, $a < 0$ para baixo."
+    },
+    {
+      "id": "2026-09-03-f3",
+      "aula": "2026-09-03",
+      "topico": "função quadrática",
+      "frente": "Onde a parábola corta o eixo $y$?",
+      "verso": "Em $(0, c)$."
+    },
+    {
+      "id": "2026-09-03-f4",
+      "aula": "2026-09-03",
+      "topico": "discriminante",
+      "frente": "Fórmula do discriminante",
+      "verso": "$\\Delta = b^2 - 4ac$"
+    },
+    {
+      "id": "2026-09-03-f5",
+      "aula": "2026-09-03",
+      "topico": "discriminante",
+      "frente": "$\\Delta > 0$",
+      "verso": "Duas raízes reais diferentes."
+    },
+    {
+      "id": "2026-09-03-f6",
+      "aula": "2026-09-03",
+      "topico": "discriminante",
+      "frente": "$\\Delta = 0$",
+      "verso": "Uma raiz dupla ($x_1 = x_2$)."
+    },
+    {
+      "id": "2026-09-03-f7",
+      "aula": "2026-09-03",
+      "topico": "discriminante",
+      "frente": "$\\Delta < 0$",
+      "verso": "Nenhuma raiz real: a parábola não corta o eixo $x$."
+    },
+    {
+      "id": "2026-09-03-f8",
+      "aula": "2026-09-03",
+      "topico": "fórmula resolutiva",
+      "frente": "Fórmula resolutiva (Bhaskara)",
+      "verso": "$x = \\frac{-b \\pm \\sqrt{\\Delta}}{2a}$"
+    },
+    {
+      "id": "2026-09-03-f9",
+      "aula": "2026-09-03",
+      "topico": "vértice",
+      "frente": "Coordenadas do vértice",
+      "verso": "$x_v = -\\frac{b}{2a}$, $y_v = -\\frac{\\Delta}{4a}$"
+    },
+    {
+      "id": "2026-09-03-f10",
+      "aula": "2026-09-03",
+      "topico": "imagem",
+      "frente": "Imagem quando $a > 0$",
+      "verso": "$[y_v, +\\infty)$"
+    },
+    {
+      "id": "2026-09-03-f11",
+      "aula": "2026-09-03",
+      "topico": "imagem",
+      "frente": "Imagem quando $a < 0$",
+      "verso": "$(-\\infty, y_v]$"
+    }
+  ],
+  "questoes": [
+    {
+      "id": "2026-08-11-q1",
+      "aula": "2026-08-11",
+      "topico": "pertinência",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Seja $A = \\{a, e, i, o, u\\}$. Qual afirmação é verdadeira?",
+      "alternativas": [
+        "$b \\in A$",
+        "$e \\notin A$",
+        "$u \\in A$",
+        "$\\{a\\} \\in A$"
+      ],
+      "correta": 2,
+      "explicacao": "$u$ está listado em $A$. $\\{a\\}$ é um conjunto, não um elemento de $A$; o certo seria $\\{a\\} \\subset A$."
+    },
+    {
+      "id": "2026-08-11-q2",
+      "aula": "2026-08-11",
+      "topico": "conjunto solução",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Com $U = \\{2, 3, 4, 5\\}$, qual é o conjunto solução de $2x + 1 = 9$?",
+      "alternativas": [
+        "$\\{3\\}$",
+        "$\\{4\\}$",
+        "$\\{4, 5\\}$",
+        "$\\varnothing$"
+      ],
+      "correta": 1,
+      "explicacao": "$2x + 1 = 9 \\Rightarrow x = 4$, e $4 \\in U$."
+    },
+    {
+      "id": "2026-08-11-q3",
+      "aula": "2026-08-11",
+      "topico": "conjunto solução",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Com $U = \\{3, 4, 5, 6, 7, 8\\}$, qual é o conjunto solução de $x - 1 > 4$?",
+      "alternativas": [
+        "$\\{5, 6, 7, 8\\}$",
+        "$\\{6, 7, 8\\}$",
+        "$\\{3, 4\\}$",
+        "$\\{5\\}$"
+      ],
+      "correta": 1,
+      "explicacao": "$x - 1 > 4 \\Rightarrow x > 5$. O 5 não entra: $5 - 1 = 4$, que não é maior que 4."
+    },
+    {
+      "id": "2026-08-11-q4",
+      "aula": "2026-08-11",
+      "topico": "conjunto solução",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Com $U = \\{1, 2, 3, 4\\}$, qual é o conjunto solução de $x^2 = 9$?",
+      "alternativas": [
+        "$\\{-3, 3\\}$",
+        "$\\{3\\}$",
+        "$\\{9\\}$",
+        "$\\varnothing$"
+      ],
+      "correta": 1,
+      "explicacao": "As raízes reais são $\\pm 3$, mas só o $3$ está no universo. O universo manda."
+    },
+    {
+      "id": "2026-08-11-q5",
+      "aula": "2026-08-11",
+      "topico": "determinação de conjuntos",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "$\\{\\varnothing\\}$ é uma forma correta de representar o conjunto vazio.",
+      "correta": false,
+      "explicacao": "$\\{\\varnothing\\}$ tem um elemento. O vazio é $\\{\\ \\}$ ou $\\varnothing$."
+    },
+    {
+      "id": "2026-08-11-q6",
+      "aula": "2026-08-11",
+      "topico": "subconjuntos",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "$\\{x, z\\} \\subset \\{x, y, t\\}$.",
+      "correta": false,
+      "explicacao": "$z$ não pertence a $\\{x, y, t\\}$, então a inclusão falha."
+    },
+    {
+      "id": "2026-08-11-q7",
+      "aula": "2026-08-11",
+      "topico": "quantificadores",
+      "tipo": "vf",
+      "dificuldade": 2,
+      "enunciado": "A sentença $(\\forall x)(x^3 = 2x^2)$ é verdadeira.",
+      "correta": false,
+      "explicacao": "Contraexemplo: $x = 1$ dá $1 = 2$. Ela só vale para $x = 0$ e $x = 2$."
+    },
+    {
+      "id": "2026-08-11-q8",
+      "aula": "2026-08-11",
+      "topico": "quantificadores",
+      "tipo": "vf",
+      "dificuldade": 2,
+      "enunciado": "A sentença $(\\forall a)((a+1)^2 = a^2 + 2a + 1)$ é verdadeira.",
+      "correta": true,
+      "explicacao": "É o quadrado da soma: vale para qualquer $a$."
+    },
+    {
+      "id": "2026-08-11-q9",
+      "aula": "2026-08-11",
+      "topico": "quantificadores",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Como se lê $\\exists x \\in A$?",
+      "alternativas": [
+        "Para todo $x$ de $A$",
+        "Existe $x$ que pertence a $A$",
+        "Não existe $x$ em $A$",
+        "$x$ está contido em $A$"
+      ],
+      "correta": 1,
+      "explicacao": "$\\exists$ é o quantificador existencial: \"existe\"."
+    },
+    {
+      "id": "2026-08-11-q10",
+      "aula": "2026-08-11",
+      "topico": "conjunto solução",
+      "tipo": "aberta",
+      "dificuldade": 2,
+      "enunciado": "Determine o conjunto solução de $x + y = 5$ com $U = \\{(1,4), (2,2), (3,2), (0,5)\\}$.",
+      "resposta": "$V = \\{(1,4), (3,2), (0,5)\\}$",
+      "explicacao": "Teste cada par: $1+4=5$, $2+2=4$ (não), $3+2=5$, $0+5=5$."
+    },
+    {
+      "id": "2026-08-11-q11",
+      "aula": "2026-08-11",
+      "topico": "conjunto solução",
+      "tipo": "aberta",
+      "dificuldade": 2,
+      "enunciado": "Determine o conjunto solução de $x^2 = 25$ com $U = \\{-5, 0, 5, 10\\}$.",
+      "resposta": "$V = \\{-5, 5\\}$",
+      "explicacao": "$(-5)^2 = 25$ e $5^2 = 25$; $0$ e $10$ não servem."
+    },
+    {
+      "id": "2026-08-13-q1",
+      "aula": "2026-08-13",
+      "topico": "diferença",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Com $A = \\{1, 2, 3\\}$ e $B = \\{3, 4, 5\\}$, quanto é $A - B$?",
+      "explicacao": "Fica o que é só de A.",
+      "alternativas": [
+        "$\\{1, 2\\}$",
+        "$\\{4, 5\\}$",
+        "$\\{3\\}$",
+        "$\\{1, 2, 3, 4, 5\\}$"
+      ],
+      "correta": 0
+    },
+    {
+      "id": "2026-08-13-q2",
+      "aula": "2026-08-13",
+      "topico": "união e interseção",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Com $A = \\{1, 2, 3\\}$ e $B = \\{3, 4, 5\\}$, quanto é $A \\cap B$?",
+      "explicacao": "Só o 3 está nos dois.",
+      "alternativas": [
+        "$\\{3\\}$",
+        "$\\{1, 2, 3, 4, 5\\}$",
+        "$\\varnothing$",
+        "$\\{1, 2\\}$"
+      ],
+      "correta": 0
+    },
+    {
+      "id": "2026-08-13-q3",
+      "aula": "2026-08-13",
+      "topico": "diferença",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "Para quaisquer conjuntos, $A - B = B - A$.",
+      "explicacao": "A ordem importa: no exemplo, $A - B = \\{1, 2\\}$ e $B - A = \\{4, 5\\}$.",
+      "correta": false
+    },
+    {
+      "id": "2026-08-13-q4",
+      "aula": "2026-08-13",
+      "topico": "diagramas de venn",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Numa turma de 50, 30 gostam de F, 25 de V e 10 dos dois. Quantos não gostam de nenhum?",
+      "explicacao": "$n(F \\cup V) = 30 + 25 - 10 = 45$; $50 - 45 = 5$.",
+      "alternativas": [
+        "5",
+        "15",
+        "10",
+        "0"
+      ],
+      "correta": 0
+    },
+    {
+      "id": "2026-08-13-q5",
+      "aula": "2026-08-13",
+      "topico": "diagramas de venn",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "120 pessoas usam F, 165 usam N, 30 usam os dois e 90 não usam nenhum. Quantas pessoas foram entrevistadas?",
+      "explicacao": "$90 + 30 + 135 + 90 = 345$.",
+      "alternativas": [
+        "315",
+        "345",
+        "375",
+        "285"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-08-13-q6",
+      "aula": "2026-08-13",
+      "topico": "diagramas de venn",
+      "tipo": "aberta",
+      "dificuldade": 3,
+      "enunciado": "No problema da engenharia de produção (140 alunos; AL 50, T 60, DT 80; AL e T 10; AL e DT 30; T e DT 15; as três 5), quantos cursam **só** Desenho Técnico?",
+      "explicacao": "Desconte as interseções a partir do centro.",
+      "resposta": "Só DT $= 80 - 25 - 10 - 5 = 40$ (onde 25 é só AL e DT, e 10 é só T e DT)."
+    },
+    {
+      "id": "2026-08-13-q7",
+      "aula": "2026-08-13",
+      "topico": "diagramas de venn",
+      "tipo": "aberta",
+      "dificuldade": 3,
+      "enunciado": "No mesmo problema, quantos alunos cursam ao menos uma disciplina?",
+      "explicacao": "Fórmula da união de 3 conjuntos.",
+      "resposta": "$50 + 60 + 80 - 10 - 30 - 15 + 5 = 140$. Todos."
+    },
+    {
+      "id": "2026-08-13-q8",
+      "aula": "2026-08-13",
+      "topico": "racionais",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "Todo número inteiro é racional.",
+      "explicacao": "Basta escrever com denominador 1: $5 = \\frac{5}{1}$.",
+      "correta": true
+    },
+    {
+      "id": "2026-08-13-q9",
+      "aula": "2026-08-13",
+      "topico": "naturais e inteiros",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "$0 \\in \\mathbb{N}^*$.",
+      "explicacao": "O asterisco tira o zero: $0 \\notin \\mathbb{N}^*$.",
+      "correta": false
+    },
+    {
+      "id": "2026-08-13-q10",
+      "aula": "2026-08-13",
+      "topico": "racionais",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Qual destes **não** é um exemplo de número racional?",
+      "explicacao": "$\\sqrt{2}$ não vira fração. Os outros: $\\frac{1}{2}$, $\\frac{5}{4}$, $\\frac{1}{3}$.",
+      "alternativas": [
+        "$0{,}5$",
+        "$1{,}25$",
+        "$0{,}333\\dots$",
+        "$\\sqrt{2}$"
+      ],
+      "correta": 3
+    },
+    {
+      "id": "2026-08-13-q11",
+      "aula": "2026-08-13",
+      "topico": "frações",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Quanto é $\\frac{3}{4} \\div \\frac{2}{5}$?",
+      "explicacao": "$\\frac{3}{4} \\cdot \\frac{5}{2} = \\frac{15}{8}$.",
+      "alternativas": [
+        "$\\frac{6}{20}$",
+        "$\\frac{15}{8}$",
+        "$\\frac{8}{15}$",
+        "$\\frac{5}{6}$"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-08-13-q12",
+      "aula": "2026-08-13",
+      "topico": "frações",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "$\\frac{2}{3} = \\frac{6}{9}$.",
+      "explicacao": "$2 \\cdot 9 = 18$ e $3 \\cdot 6 = 18$.",
+      "correta": true
+    },
+    {
+      "id": "2026-08-13-q13",
+      "aula": "2026-08-13",
+      "topico": "racionais",
+      "tipo": "aberta",
+      "dificuldade": 3,
+      "enunciado": "Calcule $1{,}08 \\times 0{,}9 + 2{,}04 \\div 9{,}4$. A qual conjunto numérico pertence o resultado?",
+      "explicacao": "Produto e quociente de decimais são frações de inteiros.",
+      "resposta": "$0{,}972 + \\frac{51}{235} \\approx 1{,}189$. É **racional** (não inteiro), uma dízima periódica."
+    },
+    {
+      "id": "2026-08-20-q1",
+      "aula": "2026-08-20",
+      "topico": "união e interseção de intervalos",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Quanto é $[-2, 3] \\cap (3, 6)$?",
+      "explicacao": "O 3 está no primeiro mas não no segundo.",
+      "alternativas": [
+        "$\\{3\\}$",
+        "$\\varnothing$",
+        "$[-2, 6)$",
+        "$(3, 3]$"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-08-20-q2",
+      "aula": "2026-08-20",
+      "topico": "união e interseção de intervalos",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Quanto é $[-3, -1) \\cap [-2, +\\infty)$?",
+      "explicacao": "Comum aos dois: de $-2$ (incluso) até antes de $-1$.",
+      "alternativas": [
+        "$[-3, +\\infty)$",
+        "$[-2, -1)$",
+        "$[-2, -1]$",
+        "$(-2, -1)$"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-08-20-q3",
+      "aula": "2026-08-20",
+      "topico": "intervalos",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "$\\{x \\in \\mathbb{R} \\mid 0 \\le x < 3\\}$ em notação de intervalo é:",
+      "explicacao": "Inclui o 0, não inclui o 3.",
+      "alternativas": [
+        "$(0, 3]$",
+        "$[0, 3)$",
+        "$[0, 3]$",
+        "$(0, 3)$"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-08-20-q4",
+      "aula": "2026-08-20",
+      "topico": "irracionais",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "$\\sqrt{2} \\in \\mathbb{Q}$.",
+      "explicacao": "$\\sqrt{2}$ não pode ser escrito como fração: é irracional.",
+      "correta": false
+    },
+    {
+      "id": "2026-08-20-q5",
+      "aula": "2026-08-20",
+      "topico": "reta real",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "$\\mathbb{R} = \\mathbb{Q} \\cup \\mathbb{I}$.",
+      "explicacao": "Os reais são os racionais mais os irracionais.",
+      "correta": true
+    },
+    {
+      "id": "2026-08-20-q6",
+      "aula": "2026-08-20",
+      "topico": "irracionais",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Qual destes é irracional?",
+      "explicacao": "$\\sqrt{9} = 3$, $\\frac{3}{2}$ e $0{,}25$ são racionais.",
+      "alternativas": [
+        "$\\sqrt{9}$",
+        "$\\frac{3}{2}$",
+        "$\\sqrt{3}$",
+        "$0{,}25$"
+      ],
+      "correta": 2
+    },
+    {
+      "id": "2026-08-20-q7",
+      "aula": "2026-08-20",
+      "topico": "reta real",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "A diagonal de um retângulo de lados 4 e 3 mede:",
+      "explicacao": "$d = \\sqrt{4^2 + 3^2} = \\sqrt{25} = 5$.",
+      "alternativas": [
+        "5",
+        "7",
+        "$\\sqrt{7}$",
+        "12"
+      ],
+      "correta": 0
+    },
+    {
+      "id": "2026-08-20-q8",
+      "aula": "2026-08-20",
+      "topico": "intervalos",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "Está correto escrever $[5, +\\infty]$.",
+      "explicacao": "Infinito não é número; o lado do infinito é sempre aberto.",
+      "correta": false
+    },
+    {
+      "id": "2026-08-20-q9",
+      "aula": "2026-08-20",
+      "topico": "união e interseção de intervalos",
+      "tipo": "vf",
+      "dificuldade": 2,
+      "enunciado": "O número $2{,}5$ pertence a $[1, 2] \\cup [3, \\frac{17}{2}]$.",
+      "explicacao": "2,5 cai no buraco entre 2 e 3.",
+      "correta": false
+    },
+    {
+      "id": "2026-08-20-q10",
+      "aula": "2026-08-20",
+      "topico": "reta real",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Qual é o ponto médio entre 1 e 2 na reta?",
+      "explicacao": "$\\frac{1 + 2}{2} = \\frac{3}{2}$.",
+      "alternativas": [
+        "$\\frac{1}{2}$",
+        "$\\frac{3}{2}$",
+        "$\\frac{2}{3}$",
+        "3"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-08-20-q11",
+      "aula": "2026-08-20",
+      "topico": "intervalos",
+      "tipo": "aberta",
+      "dificuldade": 2,
+      "enunciado": "Escreva $(-\\infty, 4]$ como desigualdade e diga como fica na reta.",
+      "explicacao": "Lado do infinito sempre aberto.",
+      "resposta": "$x \\le 4$. Bolinha **cheia** no 4 e seta para a esquerda."
+    },
+    {
+      "id": "2026-08-25-q1",
+      "aula": "2026-08-25",
+      "topico": "lei de formação",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Um serviço cobra R\\$ 45,00 fixos mais R\\$ 32,00 por hora. Quanto custa 3 horas?",
+      "explicacao": "$P(3) = 32 \\cdot 3 + 45 = 141$.",
+      "alternativas": [
+        "R\\$ 96",
+        "R\\$ 141",
+        "R\\$ 77",
+        "R\\$ 231"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-08-25-q2",
+      "aula": "2026-08-25",
+      "topico": "lei de formação",
+      "tipo": "aberta",
+      "dificuldade": 2,
+      "enunciado": "No mesmo serviço ($P(x) = 32x + 45$), a conta deu R\\$ 237. Quantas horas foram usadas?",
+      "explicacao": "Resolva a equação.",
+      "resposta": "$32x + 45 = 237 \\Rightarrow 32x = 192 \\Rightarrow x = 6$ horas."
+    },
+    {
+      "id": "2026-08-25-q3",
+      "aula": "2026-08-25",
+      "topico": "quadrantes",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Em qual quadrante está o ponto $(-2, 5)$?",
+      "explicacao": "$x < 0$ e $y > 0$.",
+      "alternativas": [
+        "1º",
+        "2º",
+        "3º",
+        "4º"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-08-25-q4",
+      "aula": "2026-08-25",
+      "topico": "quadrantes",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Em qual quadrante está o ponto $(3, -1)$?",
+      "explicacao": "$x > 0$ e $y < 0$.",
+      "alternativas": [
+        "1º",
+        "2º",
+        "3º",
+        "4º"
+      ],
+      "correta": 3
+    },
+    {
+      "id": "2026-08-25-q5",
+      "aula": "2026-08-25",
+      "topico": "par ordenado",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "No ponto $P(4, 7)$, a abscissa é 7.",
+      "explicacao": "Abscissa é a primeira coordenada ($x = 4$); 7 é a ordenada.",
+      "correta": false
+    },
+    {
+      "id": "2026-08-25-q6",
+      "aula": "2026-08-25",
+      "topico": "quadrantes",
+      "tipo": "vf",
+      "dificuldade": 2,
+      "enunciado": "O ponto $(0, 5)$ está no 1º quadrante.",
+      "explicacao": "Pontos sobre os eixos não pertencem a quadrante nenhum.",
+      "correta": false
+    },
+    {
+      "id": "2026-08-25-q7",
+      "aula": "2026-08-25",
+      "topico": "lei de formação",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Uma copiadora cobra R\\$ 0,35 por página. Qual a lei para $x$ cópias?",
+      "explicacao": "Preço por unidade vezes quantidade.",
+      "alternativas": [
+        "$f(x) = x + 0{,}35$",
+        "$f(x) = 0{,}35x$",
+        "$f(x) = 35x$",
+        "$f(x) = 0{,}35$"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-08-27-q1",
+      "aula": "2026-08-27",
+      "topico": "valor numérico",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Se $f(x) = \\frac{1}{2}x - \\frac{1}{5}$, quanto vale $f\\left(\\frac{2}{3}\\right)$?",
+      "explicacao": "$\\frac{1}{3} - \\frac{1}{5} = \\frac{5 - 3}{15}$.",
+      "alternativas": [
+        "$\\frac{2}{15}$",
+        "$\\frac{1}{15}$",
+        "$\\frac{8}{15}$",
+        "$\\frac{2}{3}$"
+      ],
+      "correta": 0
+    },
+    {
+      "id": "2026-08-27-q2",
+      "aula": "2026-08-27",
+      "topico": "valor numérico",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Se $f(x) = 2 - \\frac{1}{x - 2}$, quanto vale $f(-3)$?",
+      "explicacao": "$2 - \\frac{1}{-5} = 2 + \\frac{1}{5}$.",
+      "alternativas": [
+        "$\\frac{9}{5}$",
+        "$\\frac{11}{5}$",
+        "$-\\frac{11}{5}$",
+        "$\\frac{1}{5}$"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-08-27-q3",
+      "aula": "2026-08-27",
+      "topico": "racionalização",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Racionalizando $\\frac{1}{\\sqrt{8}}$, obtemos:",
+      "explicacao": "$\\frac{\\sqrt{8}}{8} = \\frac{2\\sqrt{2}}{8}$.",
+      "alternativas": [
+        "$\\frac{\\sqrt{2}}{4}$",
+        "$\\frac{\\sqrt{8}}{4}$",
+        "$\\frac{1}{4}$",
+        "$2\\sqrt{2}$"
+      ],
+      "correta": 0
+    },
+    {
+      "id": "2026-08-27-q4",
+      "aula": "2026-08-27",
+      "topico": "imagem",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "A imagem de uma função é sempre igual ao contradomínio.",
+      "explicacao": "A imagem é só a parte do contradomínio que recebe flecha.",
+      "correta": false
+    },
+    {
+      "id": "2026-08-27-q5",
+      "aula": "2026-08-27",
+      "topico": "diagrama de flechas",
+      "tipo": "vf",
+      "dificuldade": 2,
+      "enunciado": "Se um elemento do domínio sai com duas flechas, a relação ainda é uma função.",
+      "explicacao": "Cada $x$ deve ter exatamente uma imagem.",
+      "correta": false
+    },
+    {
+      "id": "2026-08-27-q6",
+      "aula": "2026-08-27",
+      "topico": "valor numérico",
+      "tipo": "aberta",
+      "dificuldade": 2,
+      "enunciado": "Calcule $f(3)$ para $f(x) = \\frac{1}{\\sqrt{x^2 - 1}}$ e racionalize.",
+      "explicacao": "Substitua e depois multiplique por $\\frac{\\sqrt{8}}{\\sqrt{8}}$.",
+      "resposta": "$f(3) = \\frac{1}{\\sqrt{8}} = \\frac{\\sqrt{8}}{8} = \\frac{\\sqrt{2}}{4}$"
+    },
+    {
+      "id": "2026-08-27-q7",
+      "aula": "2026-08-27",
+      "topico": "valor numérico",
+      "tipo": "vf",
+      "dificuldade": 2,
+      "enunciado": "$f(x) = 2 - \\frac{1}{x - 2}$ existe para $x = 2$.",
+      "explicacao": "Daria divisão por zero.",
+      "correta": false
+    },
+    {
+      "id": "2026-09-01-q1",
+      "aula": "2026-09-01",
+      "topico": "função afim",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Em $f(x) = 2x + 1$, quanto vale $f(2)$?",
+      "explicacao": "$2 \\cdot 2 + 1 = 5$.",
+      "alternativas": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correta": 2
+    },
+    {
+      "id": "2026-09-01-q2",
+      "aula": "2026-09-01",
+      "topico": "coeficiente angular",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Em $f(x) = -3x + 7$, o coeficiente angular é:",
+      "explicacao": "É o número que multiplica $x$.",
+      "alternativas": [
+        "7",
+        "-3",
+        "3",
+        "-7"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-09-01-q3",
+      "aula": "2026-09-01",
+      "topico": "função afim",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Onde a reta $f(x) = 4x - 2$ corta o eixo $y$?",
+      "explicacao": "Em $x = 0$: $f(0) = -2$.",
+      "alternativas": [
+        "$(0, 4)$",
+        "$(0, -2)$",
+        "$(-2, 0)$",
+        "$(\\frac{1}{2}, 0)$"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-09-01-q4",
+      "aula": "2026-09-01",
+      "topico": "coeficiente angular",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Uma reta passa por $(1, 3)$ e $(2, 5)$. Qual é o coeficiente angular?",
+      "explicacao": "$\\frac{5 - 3}{2 - 1} = 2$.",
+      "alternativas": [
+        "1",
+        "2",
+        "3",
+        "5"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-09-01-q5",
+      "aula": "2026-09-01",
+      "topico": "função linear",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "$f(x) = 5x$ é uma função linear.",
+      "explicacao": "É afim com $b = 0$.",
+      "correta": true
+    },
+    {
+      "id": "2026-09-01-q6",
+      "aula": "2026-09-01",
+      "topico": "função identidade",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "A reta da função identidade faz $60°$ com o eixo $x$.",
+      "explicacao": "$\\operatorname{tg}\\alpha = 1 \\Rightarrow 45°$.",
+      "correta": false
+    },
+    {
+      "id": "2026-09-01-q7",
+      "aula": "2026-09-01",
+      "topico": "coeficiente angular",
+      "tipo": "vf",
+      "dificuldade": 2,
+      "enunciado": "$f(x) = -2x + 3$ é crescente.",
+      "explicacao": "$a = -2 < 0$: decrescente.",
+      "correta": false
+    },
+    {
+      "id": "2026-09-01-q8",
+      "aula": "2026-09-01",
+      "topico": "função afim",
+      "tipo": "aberta",
+      "dificuldade": 2,
+      "enunciado": "Ache a raiz de $f(x) = 2x + 1$.",
+      "explicacao": "Faça $f(x) = 0$.",
+      "resposta": "$2x + 1 = 0 \\Rightarrow x = -\\frac{1}{2}$."
+    },
+    {
+      "id": "2026-09-01-q9",
+      "aula": "2026-09-01",
+      "topico": "trigonometria",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Quanto vale $\\cos 30°$?",
+      "explicacao": "Tabela dos ângulos notáveis.",
+      "alternativas": [
+        "$\\frac{1}{2}$",
+        "$\\frac{\\sqrt{2}}{2}$",
+        "$\\frac{\\sqrt{3}}{2}$",
+        "1"
+      ],
+      "correta": 2
+    },
+    {
+      "id": "2026-09-03-q1",
+      "aula": "2026-09-03",
+      "topico": "concavidade",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "A parábola de $f(x) = -x^2 + 4x - 3$ tem concavidade:",
+      "explicacao": "$a = -1 < 0$.",
+      "alternativas": [
+        "para cima",
+        "para baixo",
+        "depende de $c$",
+        "não é parábola"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-09-03-q2",
+      "aula": "2026-09-03",
+      "topico": "discriminante",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Quais são os zeros de $f(x) = x^2 - 5x + 6$?",
+      "explicacao": "$\\Delta = 1$; $x = \\frac{5 \\pm 1}{2}$.",
+      "alternativas": [
+        "1 e 6",
+        "2 e 3",
+        "-2 e -3",
+        "não tem"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-09-03-q3",
+      "aula": "2026-09-03",
+      "topico": "discriminante",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Quantas raízes reais tem $f(x) = 2x^2 + 4x + 5$?",
+      "explicacao": "$\\Delta = 16 - 40 = -24 < 0$.",
+      "alternativas": [
+        "duas diferentes",
+        "uma dupla",
+        "nenhuma",
+        "três"
+      ],
+      "correta": 2
+    },
+    {
+      "id": "2026-09-03-q4",
+      "aula": "2026-09-03",
+      "topico": "discriminante",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Quanto vale $\\Delta$ em $f(x) = x^2 - 6x + 9$?",
+      "explicacao": "$36 - 36 = 0$: raiz dupla $x = 3$.",
+      "alternativas": [
+        "0",
+        "36",
+        "-36",
+        "72"
+      ],
+      "correta": 0
+    },
+    {
+      "id": "2026-09-03-q5",
+      "aula": "2026-09-03",
+      "topico": "vértice",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Qual é o vértice de $f(x) = x^2 - 4x + 5$?",
+      "explicacao": "$x_v = 2$, $y_v = f(2) = 1$.",
+      "alternativas": [
+        "$(2, 1)$",
+        "$(-2, 17)$",
+        "$(4, 5)$",
+        "$(0, 5)$"
+      ],
+      "correta": 0
+    },
+    {
+      "id": "2026-09-03-q6",
+      "aula": "2026-09-03",
+      "topico": "imagem",
+      "tipo": "multipla",
+      "dificuldade": 3,
+      "enunciado": "Qual é a imagem de $f(x) = x^2 - 4x + 5$?",
+      "explicacao": "$a > 0$ e $y_v = 1$.",
+      "alternativas": [
+        "$(-\\infty, 1]$",
+        "$[1, +\\infty)$",
+        "$[2, +\\infty)$",
+        "$\\mathbb{R}$"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-09-03-q7",
+      "aula": "2026-09-03",
+      "topico": "função quadrática",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "A parábola de $f(x) = x^2 - 5x + 6$ corta o eixo $y$ em $(0, 6)$.",
+      "explicacao": "$f(0) = c = 6$.",
+      "correta": true
+    },
+    {
+      "id": "2026-09-03-q8",
+      "aula": "2026-09-03",
+      "topico": "vértice",
+      "tipo": "vf",
+      "dificuldade": 2,
+      "enunciado": "$x_v = \\frac{b}{2a}$.",
+      "explicacao": "Falta o sinal: $x_v = -\\frac{b}{2a}$.",
+      "correta": false
+    },
+    {
+      "id": "2026-09-03-q9",
+      "aula": "2026-09-03",
+      "topico": "fórmula resolutiva",
+      "tipo": "aberta",
+      "dificuldade": 2,
+      "enunciado": "Resolva $-x^2 + 4x - 3 = 0$.",
+      "explicacao": "Cuidado: $2a = -2$.",
+      "resposta": "$\\Delta = 16 - 12 = 4$; $x = \\frac{-4 \\pm 2}{-2}$; $x_1 = 1$, $x_2 = 3$."
+    },
+    {
+      "id": "2026-09-03-q10",
+      "aula": "2026-09-03",
+      "topico": "vértice",
+      "tipo": "aberta",
+      "dificuldade": 3,
+      "enunciado": "Ache o vértice de $f(x) = x^2 - 5x + 6$.",
+      "explicacao": "$x_v = -\\frac{b}{2a}$, depois $y_v = f(x_v)$.",
+      "resposta": "$x_v = \\frac{5}{2}$; $y_v = \\frac{25}{4} - \\frac{25}{2} + 6 = -\\frac{1}{4}$. $V\\left(\\frac{5}{2}, -\\frac{1}{4}\\right)$."
+    }
+  ],
+  "mapa": {
+    "titulo": "Cálculo I",
+    "filhos": [
+      {
+        "titulo": "Conjuntos",
+        "aula": "2026-08-11",
+        "filhos": [
+          {
+            "titulo": "Pertinência: $\\in$, $\\notin$"
+          },
+          {
+            "titulo": "Enumeração e propriedade"
+          },
+          {
+            "titulo": "Vazio: $\\varnothing$"
+          },
+          {
+            "titulo": "Quantificadores: $\\forall$, $\\exists$, $\\nexists$"
+          },
+          {
+            "titulo": "Subconjuntos: $\\subset$"
+          },
+          {
+            "titulo": "Conjunto universo e solução"
+          }
+        ]
+      },
+      {
+        "titulo": "Operações e diagramas de Venn",
+        "aula": "2026-08-13",
+        "filhos": [
+          {
+            "titulo": "União $\\cup$ e interseção $\\cap$"
+          },
+          {
+            "titulo": "Diferença $A - B$"
+          },
+          {
+            "titulo": "$n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$"
+          },
+          {
+            "titulo": "Problemas com 2 e 3 conjuntos"
+          }
+        ]
+      },
+      {
+        "titulo": "Conjuntos numéricos",
+        "filhos": [
+          {
+            "titulo": "$\\mathbb{N}$ e $\\mathbb{Z}$",
+            "aula": "2026-08-13"
+          },
+          {
+            "titulo": "$\\mathbb{Q}$: frações, decimais, dízimas",
+            "aula": "2026-08-13"
+          },
+          {
+            "titulo": "$\\mathbb{I}$: irracionais ($\\sqrt{2}$)",
+            "aula": "2026-08-20"
+          },
+          {
+            "titulo": "$\\mathbb{R} = \\mathbb{Q} \\cup \\mathbb{I}$",
+            "aula": "2026-08-20"
+          }
+        ]
+      },
+      {
+        "titulo": "Intervalos reais",
+        "aula": "2026-08-20",
+        "filhos": [
+          {
+            "titulo": "Fechado, aberto, semiaberto"
+          },
+          {
+            "titulo": "Intervalos infinitos"
+          },
+          {
+            "titulo": "União e interseção na reta"
+          }
+        ]
+      },
+      {
+        "titulo": "Funções",
+        "filhos": [
+          {
+            "titulo": "Ideia de função e plano cartesiano",
+            "aula": "2026-08-25"
+          },
+          {
+            "titulo": "Diagrama de flechas, imagem, valor numérico",
+            "aula": "2026-08-27"
+          },
+          {
+            "titulo": "Constante, afim, linear, identidade",
+            "aula": "2026-09-01",
+            "filhos": [
+              {
+                "titulo": "$a = \\operatorname{tg}\\alpha$"
+              },
+              {
+                "titulo": "$b$: corta o eixo $y$"
+              }
+            ]
+          },
+          {
+            "titulo": "Função quadrática",
+            "aula": "2026-09-03",
+            "filhos": [
+              {
+                "titulo": "Concavidade: sinal de $a$"
+              },
+              {
+                "titulo": "$\\Delta = b^2 - 4ac$"
+              },
+              {
+                "titulo": "Vértice $\\left(-\\frac{b}{2a}, -\\frac{\\Delta}{4a}\\right)$"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

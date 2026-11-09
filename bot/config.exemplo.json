@@ -1,0 +1,7 @@
+{
+  "fuso": "America/Sao_Paulo",
+  "canais": [
+    { "nome": "fotos-da-aula", "id": 0, "tipo": "fotos", "materia": null },
+    { "nome": "geral", "id": 0, "tipo": "geral" }
+  ]
+}
