@@ -496,3 +496,12 @@ details:not([open]) > summary.no::after { content: "+"; color: var(--tinta-3); f
 .lightbox[hidden] { display: none; }
 .lightbox img { max-height: 100%; max-width: 100%; border-radius: 8px; }
 .lightbox button { position: absolute; top: 10px; right: 14px; width: 44px; height: 44px; font-size: 2rem; background: none; border: 0; color: #fff; cursor: pointer; }
+
+/* Vídeos da aula */
+.videos { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+.video { display: flex; flex-direction: column; gap: 4px; color: inherit; text-decoration: none; border-radius: 14px; padding: 8px; border: 1px solid var(--linha); background: var(--quadro); transition: border-color .2s, transform .25s var(--mola); }
+.video:hover { border-color: var(--c, var(--errado)); transform: translateY(-2px); }
+.video .thumb { position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 16/9; background: var(--quadro-2); }
+.video .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.video .thumb .ph-duotone { position: absolute; inset: 0; margin: auto; width: fit-content; height: fit-content; font-size: 2.6rem; color: #fff; filter: drop-shadow(0 2px 6px rgba(0,0,0,.5)); }
+.video b { font-size: .92rem; font-weight: 600; line-height: 1.3; }

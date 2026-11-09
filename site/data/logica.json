@@ -5,62 +5,226 @@
       "id": "2026-08-11",
       "data": "2026-08-11",
       "titulo": "Lógica proposicional",
-      "topicos": ["lógica sentencial", "sentença aberta e fechada", "proposição", "princípios da lógica"],
-      "fotos": ["fotos/fotos-da-aula/2026-10-31/1566277776758276146-0.jpg"],
+      "topicos": [
+        "lógica sentencial",
+        "sentença aberta e fechada",
+        "proposição",
+        "princípios da lógica"
+      ],
+      "fotos": [
+        "fotos/fotos-da-aula/2026-10-31/1566277776758276146-0.jpg"
+      ],
       "resumo": "- **Sentença** é a expressão de um pensamento completo.\n- **Sentença aberta**: não dá para dizer se é verdadeira ou falsa (tem algo indefinido, como uma variável). Ex.: $x + 2 = 5$.\n- **Sentença fechada** (proposição): sempre tem valor **V** ou **F**. Ex.: \"2 é par\".\n- Três princípios da lógica clássica:\n  - **Identidade**: o valor de uma proposição é fixo.\n  - **Não contradição**: não pode ser V e F ao mesmo tempo.\n  - **Terceiro excluído**: ou é V ou é F, não existe terceira opção.",
       "transcricao": "*Foto do caderno de um colega, 11/08/26.*\n\n## Lógica de programação\n\n### Lógica proposicional\n\n→ **Lógica sentencial**\n- É a expressão de um pensamento completo\n\n**Sentença:** pensamento completo\n\n**Sentença aberta e fechada:**\n- **Aberta:** não pode atribuir verdadeiro ou falso (*não temos certeza*)\n- **Fechada / lógica ou proposicional:** sempre possui valor verdadeiro ou falso\n\n### Fundamentos lógicos\n- **Princípio da identidade:** verdade ou falso fixo\n- **Princípio da não contradição:** não pode ser os dois ao mesmo tempo\n- **Princípio do terceiro excluído:** só existe verdade ou falso\n\n*(Na página ao lado aparece o começo de uma tabela-verdade com a coluna P: V, V, F, F.)*",
       "aprofundamento": "### Proposição: o tijolo da lógica\nUma **proposição** é uma frase declarativa que pode ser julgada como verdadeira ou falsa.\n\n| Frase | É proposição? | Por quê |\n|---|---|---|\n| \"Brasília é a capital do Brasil.\" | Sim (V) | dá para julgar |\n| \"$7 < 3$\" | Sim (F) | dá para julgar, mesmo sendo falsa |\n| \"$x + 2 = 5$\" | Não | depende de $x$: é **sentença aberta** |\n| \"Feche a porta!\" | Não | ordem não é verdadeira nem falsa |\n| \"Que horas são?\" | Não | pergunta |\n\n**Erro comum:** achar que proposição tem que ser verdadeira. Uma frase **falsa** também é proposição.\n\n### De sentença aberta para proposição\nUma sentença aberta vira proposição quando você:\n- **troca a variável por um valor**: $x + 2 = 5$ com $x = 3$ vira \"$3 + 2 = 5$\" (V);\n- **ou usa um quantificador**: \"existe $x$ tal que $x + 2 = 5$\" (V).\n\nIsso conversa direto com a aula de **Conjuntos** de Cálculo I do mesmo dia (conjunto solução e quantificadores).\n\n### Os três princípios, em termos de programação\n- **Identidade**: uma variável booleana vale `verdadeiro` ou `falso` e esse valor não muda sozinho.\n- **Não contradição**: `p E NAO p` é sempre falso.\n- **Terceiro excluído**: `p OU NAO p` é sempre verdadeiro. Por isso um `se ... senao` sempre cobre todos os casos.\n\n### Tabela-verdade (o que vem a seguir)\nCom duas proposições $P$ e $Q$ existem $2^2 = 4$ combinações de valores:\n\n| P | Q |\n|---|---|\n| V | V |\n| V | F |\n| F | V |\n| F | F |\n\nCom $n$ proposições, são $2^n$ linhas.",
       "referencias": [
-        { "titulo": "Apostila: proposições, tabelas-verdade e conectivos lógicos", "url": "https://docentes.ifrn.edu.br/cleonelima/disciplinas/fundamentos-de-programacao-2.8401.1m/fundamentos-de-logica-e-algoritmos-1.8401.1v/apostila-proposicoes-tabelas-verdade-conectivos-logicos", "tipo": "livro", "descricao": "IFRN" },
-        { "titulo": "Iniciação à lógica (PDF)", "url": "https://www.ime.usp.br/~glaucio/textos/LogicaInic.pdf", "tipo": "livro", "descricao": "IME-USP" },
-        { "titulo": "Operadores lógicos e relacionais (Curso em Vídeo)", "url": "https://www.youtube.com/watch?v=Ig4QZNpVZYs", "tipo": "video", "descricao": "Prof. Gustavo Guanabara" }
+        {
+          "titulo": "Iniciação à lógica (PDF)",
+          "url": "https://www.ime.usp.br/~glaucio/textos/LogicaInic.pdf",
+          "tipo": "livro",
+          "descricao": "IME-USP"
+        }
+      ],
+      "videos": [
+        {
+          "id": "3EiBsJuPrKc",
+          "titulo": "Proposição lógica e sentença aberta",
+          "canal": "Bote Fé na Matemática"
+        },
+        {
+          "id": "j0jmTWZAr6E",
+          "titulo": "Não contradição × terceiro excluído",
+          "canal": "Prof. Adecio Santos"
+        },
+        {
+          "id": "pU4I8sC-2WM",
+          "titulo": "Proposições e operações lógicas",
+          "canal": "Prof. Gui"
+        },
+        {
+          "id": "Ig4QZNpVZYs",
+          "titulo": "Operadores lógicos e relacionais",
+          "canal": "Curso em Vídeo"
+        }
       ]
     }
   ],
   "flashcards": [
-    { "id": "2026-08-11-f1", "aula": "2026-08-11", "topico": "lógica sentencial", "frente": "O que é uma sentença?", "verso": "A expressão de um **pensamento completo**." },
-    { "id": "2026-08-11-f2", "aula": "2026-08-11", "topico": "sentença aberta e fechada", "frente": "O que é uma sentença aberta?", "verso": "Uma sentença à qual **não dá** para atribuir V ou F. Ex.: $x + 2 = 5$." },
-    { "id": "2026-08-11-f3", "aula": "2026-08-11", "topico": "sentença aberta e fechada", "frente": "O que é uma sentença fechada?", "verso": "Uma sentença que **sempre** tem valor V ou F. Também chamada de proposição." },
-    { "id": "2026-08-11-f4", "aula": "2026-08-11", "topico": "proposição", "frente": "\"$7 < 3$\" é proposição?", "verso": "**Sim.** É falsa, mas dá para julgar. Proposição não precisa ser verdadeira." },
-    { "id": "2026-08-11-f5", "aula": "2026-08-11", "topico": "proposição", "frente": "Pergunta ou ordem pode ser proposição?", "verso": "**Não.** Não dá para dizer se são verdadeiras ou falsas." },
-    { "id": "2026-08-11-f6", "aula": "2026-08-11", "topico": "princípios da lógica", "frente": "Princípio da identidade", "verso": "O valor lógico de uma proposição é **fixo**." },
-    { "id": "2026-08-11-f7", "aula": "2026-08-11", "topico": "princípios da lógica", "frente": "Princípio da não contradição", "verso": "Uma proposição **não pode** ser V e F ao mesmo tempo." },
-    { "id": "2026-08-11-f8", "aula": "2026-08-11", "topico": "princípios da lógica", "frente": "Princípio do terceiro excluído", "verso": "Uma proposição é V **ou** F. Não existe terceira opção." },
-    { "id": "2026-08-11-f9", "aula": "2026-08-11", "topico": "proposição", "frente": "Quantas linhas tem a tabela-verdade de $n$ proposições?", "verso": "$2^n$ linhas." }
+    {
+      "id": "2026-08-11-f1",
+      "aula": "2026-08-11",
+      "topico": "lógica sentencial",
+      "frente": "O que é uma sentença?",
+      "verso": "A expressão de um **pensamento completo**."
+    },
+    {
+      "id": "2026-08-11-f2",
+      "aula": "2026-08-11",
+      "topico": "sentença aberta e fechada",
+      "frente": "O que é uma sentença aberta?",
+      "verso": "Uma sentença à qual **não dá** para atribuir V ou F. Ex.: $x + 2 = 5$."
+    },
+    {
+      "id": "2026-08-11-f3",
+      "aula": "2026-08-11",
+      "topico": "sentença aberta e fechada",
+      "frente": "O que é uma sentença fechada?",
+      "verso": "Uma sentença que **sempre** tem valor V ou F. Também chamada de proposição."
+    },
+    {
+      "id": "2026-08-11-f4",
+      "aula": "2026-08-11",
+      "topico": "proposição",
+      "frente": "\"$7 < 3$\" é proposição?",
+      "verso": "**Sim.** É falsa, mas dá para julgar. Proposição não precisa ser verdadeira."
+    },
+    {
+      "id": "2026-08-11-f5",
+      "aula": "2026-08-11",
+      "topico": "proposição",
+      "frente": "Pergunta ou ordem pode ser proposição?",
+      "verso": "**Não.** Não dá para dizer se são verdadeiras ou falsas."
+    },
+    {
+      "id": "2026-08-11-f6",
+      "aula": "2026-08-11",
+      "topico": "princípios da lógica",
+      "frente": "Princípio da identidade",
+      "verso": "O valor lógico de uma proposição é **fixo**."
+    },
+    {
+      "id": "2026-08-11-f7",
+      "aula": "2026-08-11",
+      "topico": "princípios da lógica",
+      "frente": "Princípio da não contradição",
+      "verso": "Uma proposição **não pode** ser V e F ao mesmo tempo."
+    },
+    {
+      "id": "2026-08-11-f8",
+      "aula": "2026-08-11",
+      "topico": "princípios da lógica",
+      "frente": "Princípio do terceiro excluído",
+      "verso": "Uma proposição é V **ou** F. Não existe terceira opção."
+    },
+    {
+      "id": "2026-08-11-f9",
+      "aula": "2026-08-11",
+      "topico": "proposição",
+      "frente": "Quantas linhas tem a tabela-verdade de $n$ proposições?",
+      "verso": "$2^n$ linhas."
+    }
   ],
   "questoes": [
-    { "id": "2026-08-11-q1", "aula": "2026-08-11", "topico": "sentença aberta e fechada", "tipo": "multipla", "dificuldade": 1,
+    {
+      "id": "2026-08-11-q1",
+      "aula": "2026-08-11",
+      "topico": "sentença aberta e fechada",
+      "tipo": "multipla",
+      "dificuldade": 1,
       "enunciado": "Qual destas é uma **sentença aberta**?",
-      "alternativas": ["\"2 + 2 = 4\"", "\"$x + 1 = 7$\"", "\"O Sol é uma estrela.\"", "\"$5 > 9$\""], "correta": 1,
-      "explicacao": "Sem saber o valor de $x$, não dá para dizer se é V ou F." },
-    { "id": "2026-08-11-q2", "aula": "2026-08-11", "topico": "proposição", "tipo": "multipla", "dificuldade": 1,
+      "alternativas": [
+        "\"2 + 2 = 4\"",
+        "\"$x + 1 = 7$\"",
+        "\"O Sol é uma estrela.\"",
+        "\"$5 > 9$\""
+      ],
+      "correta": 1,
+      "explicacao": "Sem saber o valor de $x$, não dá para dizer se é V ou F."
+    },
+    {
+      "id": "2026-08-11-q2",
+      "aula": "2026-08-11",
+      "topico": "proposição",
+      "tipo": "multipla",
+      "dificuldade": 1,
       "enunciado": "Qual destas **não** é uma proposição?",
-      "alternativas": ["\"Recife fica em Pernambuco.\"", "\"$10$ é ímpar.\"", "\"Estude para a prova!\"", "\"$3 \\cdot 3 = 9$\""], "correta": 2,
-      "explicacao": "Ordem não é verdadeira nem falsa. \"10 é ímpar\" é proposição falsa." },
-    { "id": "2026-08-11-q3", "aula": "2026-08-11", "topico": "princípios da lógica", "tipo": "multipla", "dificuldade": 1,
+      "alternativas": [
+        "\"Recife fica em Pernambuco.\"",
+        "\"$10$ é ímpar.\"",
+        "\"Estude para a prova!\"",
+        "\"$3 \\cdot 3 = 9$\""
+      ],
+      "correta": 2,
+      "explicacao": "Ordem não é verdadeira nem falsa. \"10 é ímpar\" é proposição falsa."
+    },
+    {
+      "id": "2026-08-11-q3",
+      "aula": "2026-08-11",
+      "topico": "princípios da lógica",
+      "tipo": "multipla",
+      "dificuldade": 1,
       "enunciado": "\"Uma proposição não pode ser verdadeira e falsa ao mesmo tempo.\" Qual princípio é esse?",
-      "alternativas": ["Identidade", "Não contradição", "Terceiro excluído", "Equivalência"], "correta": 1,
-      "explicacao": "É o princípio da não contradição." },
-    { "id": "2026-08-11-q4", "aula": "2026-08-11", "topico": "princípios da lógica", "tipo": "multipla", "dificuldade": 1,
+      "alternativas": [
+        "Identidade",
+        "Não contradição",
+        "Terceiro excluído",
+        "Equivalência"
+      ],
+      "correta": 1,
+      "explicacao": "É o princípio da não contradição."
+    },
+    {
+      "id": "2026-08-11-q4",
+      "aula": "2026-08-11",
+      "topico": "princípios da lógica",
+      "tipo": "multipla",
+      "dificuldade": 1,
       "enunciado": "\"Toda proposição é verdadeira ou falsa, não há uma terceira possibilidade.\" Qual princípio é esse?",
-      "alternativas": ["Terceiro excluído", "Identidade", "Não contradição", "Inclusão"], "correta": 0,
-      "explicacao": "O terceiro valor fica \"excluído\"." },
-    { "id": "2026-08-11-q5", "aula": "2026-08-11", "topico": "proposição", "tipo": "vf", "dificuldade": 1,
+      "alternativas": [
+        "Terceiro excluído",
+        "Identidade",
+        "Não contradição",
+        "Inclusão"
+      ],
+      "correta": 0,
+      "explicacao": "O terceiro valor fica \"excluído\"."
+    },
+    {
+      "id": "2026-08-11-q5",
+      "aula": "2026-08-11",
+      "topico": "proposição",
+      "tipo": "vf",
+      "dificuldade": 1,
       "enunciado": "Para ser proposição, a frase precisa ser verdadeira.",
       "correta": false,
-      "explicacao": "Basta poder ser julgada como V **ou** F. Frases falsas também são proposições." },
-    { "id": "2026-08-11-q6", "aula": "2026-08-11", "topico": "sentença aberta e fechada", "tipo": "vf", "dificuldade": 2,
+      "explicacao": "Basta poder ser julgada como V **ou** F. Frases falsas também são proposições."
+    },
+    {
+      "id": "2026-08-11-q6",
+      "aula": "2026-08-11",
+      "topico": "sentença aberta e fechada",
+      "tipo": "vf",
+      "dificuldade": 2,
       "enunciado": "Trocando $x$ por $3$, a sentença aberta \"$x + 2 = 5$\" vira uma proposição verdadeira.",
       "correta": true,
-      "explicacao": "\"$3 + 2 = 5$\" é uma sentença fechada e verdadeira." },
-    { "id": "2026-08-11-q7", "aula": "2026-08-11", "topico": "proposição", "tipo": "multipla", "dificuldade": 2,
+      "explicacao": "\"$3 + 2 = 5$\" é uma sentença fechada e verdadeira."
+    },
+    {
+      "id": "2026-08-11-q7",
+      "aula": "2026-08-11",
+      "topico": "proposição",
+      "tipo": "multipla",
+      "dificuldade": 2,
       "enunciado": "Quantas linhas tem a tabela-verdade com 3 proposições ($P$, $Q$, $R$)?",
-      "alternativas": ["3", "6", "8", "9"], "correta": 2,
-      "explicacao": "$2^3 = 8$ combinações." },
-    { "id": "2026-08-11-q8", "aula": "2026-08-11", "topico": "princípios da lógica", "tipo": "aberta", "dificuldade": 2,
+      "alternativas": [
+        "3",
+        "6",
+        "8",
+        "9"
+      ],
+      "correta": 2,
+      "explicacao": "$2^3 = 8$ combinações."
+    },
+    {
+      "id": "2026-08-11-q8",
+      "aula": "2026-08-11",
+      "topico": "princípios da lógica",
+      "tipo": "aberta",
+      "dificuldade": 2,
       "enunciado": "Explique com suas palavras a diferença entre sentença aberta e sentença fechada e dê um exemplo de cada.",
       "resposta": "Sentença aberta não tem valor lógico definido porque depende de algo indefinido, como uma variável (ex.: \"$x > 4$\"). Sentença fechada sempre pode ser julgada como V ou F (ex.: \"$9 > 4$\", que é V).",
-      "explicacao": "O ponto-chave é a presença de algo indefinido que impede julgar o valor." }
+      "explicacao": "O ponto-chave é a presença de algo indefinido que impede julgar o valor."
+    }
   ],
   "mapa": {
     "titulo": "Lógica de Programação",
@@ -69,10 +233,29 @@
         "titulo": "Lógica proposicional",
         "aula": "2026-08-11",
         "filhos": [
-          { "titulo": "Sentença e proposição" },
-          { "titulo": "Sentença aberta × fechada" },
-          { "titulo": "Princípios", "filhos": [{ "titulo": "Identidade" }, { "titulo": "Não contradição" }, { "titulo": "Terceiro excluído" }] },
-          { "titulo": "Tabela-verdade" }
+          {
+            "titulo": "Sentença e proposição"
+          },
+          {
+            "titulo": "Sentença aberta × fechada"
+          },
+          {
+            "titulo": "Princípios",
+            "filhos": [
+              {
+                "titulo": "Identidade"
+              },
+              {
+                "titulo": "Não contradição"
+              },
+              {
+                "titulo": "Terceiro excluído"
+              }
+            ]
+          },
+          {
+            "titulo": "Tabela-verdade"
+          }
         ]
       }
     ]

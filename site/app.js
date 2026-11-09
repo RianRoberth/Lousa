@@ -648,7 +648,11 @@ async function paginaAula(mid, aid) {
       <section class="bloco-texto resumo md">${md(a.resumo)}</section>
       ${a.transcricao ? `<details class="na-lousa bloco-texto"><summary>Lousa</summary><div class="md">${md(a.transcricao)}</div></details>` : ''}
       ${a.aprofundamento ? `<section class="bloco-texto"><h2>Explicação</h2><div class="md">${md(a.aprofundamento)}</div></section>` : ''}
-      ${refs.length ? `<section class="bloco-texto"><h2>Vídeos e leituras</h2><div class="refs">${refs.map(r =>
+      ${(a.videos || []).length ? `<section class="bloco-texto"><h2>Assistir</h2><div class="videos">${a.videos.map(v =>
+        `<a class="video spot" href="https://www.youtube.com/watch?v=${esc(v.id)}" target="_blank" rel="noopener">
+          <span class="thumb"><img src="https://i.ytimg.com/vi/${esc(v.id)}/mqdefault.jpg" loading="lazy" alt=""><i class="ph-duotone ph-play-circle" aria-hidden="true"></i></span>
+          <b>${esc(v.titulo)}</b><span class="sub">${esc(v.canal)}</span></a>`).join('')}</div></section>` : ''}
+      ${refs.length ? `<section class="bloco-texto"><h2>Para ler</h2><div class="refs">${refs.map(r =>
         `<a class="ref spot" href="${esc(r.url)}" target="_blank" rel="noopener"><span class="ref-ic">${ic(ICONE_REF[r.tipo] || 'link')}</span>
           <span><b>${esc(r.titulo)}</b>${r.descricao ? `<span class="sub">${esc(r.descricao)}</span>` : ''}</span>${ic('fora')}</a>`).join('')}</div></section>` : ''}
     </div>

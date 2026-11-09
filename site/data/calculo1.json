@@ -53,6 +53,18 @@
           "tipo": "artigo",
           "descricao": "InfoEscola"
         }
+      ],
+      "videos": [
+        {
+          "id": "PbukvQSBUak",
+          "titulo": "Relação de pertinência e inclusão",
+          "canal": "Gis com Giz"
+        },
+        {
+          "id": "VChIV138b9E",
+          "titulo": "Teoria dos conjuntos: conceitos iniciais",
+          "canal": "Leonardo Chucrute"
+        }
       ]
     },
     {
@@ -100,6 +112,35 @@
           "url": "https://www.preparaenem.com/matematica/introducao-ao-estudo-dos-conjuntos.htm",
           "tipo": "artigo",
           "descricao": "Prepara Enem"
+        },
+        {
+          "titulo": "Diagrama de Venn",
+          "url": "https://www.todamateria.com.br/diagrama-de-venn/",
+          "tipo": "artigo",
+          "descricao": "Toda Matéria"
+        },
+        {
+          "titulo": "Conjuntos numéricos",
+          "url": "https://www.todamateria.com.br/conjuntos-numericos/",
+          "tipo": "artigo",
+          "descricao": "Toda Matéria"
+        }
+      ],
+      "videos": [
+        {
+          "id": "NcFme0jqMeA",
+          "titulo": "Diagrama de Venn: união, interseção e diferença",
+          "canal": "Matemática Pra Quem Não Sabe"
+        },
+        {
+          "id": "Jfj4P8CdPIM",
+          "titulo": "Diagrama de Venn com 3 conjuntos",
+          "canal": "Professor Julio Cesar"
+        },
+        {
+          "id": "Ymu1L35AQPs",
+          "titulo": "Conjuntos numéricos",
+          "canal": "Gis com Giz"
         }
       ]
     },
@@ -141,6 +182,23 @@
           "tipo": "livro",
           "descricao": "REAMAT/UFRGS"
         }
+      ],
+      "videos": [
+        {
+          "id": "1nXjvLXDH4k",
+          "titulo": "Naturais, inteiros, racionais, irracionais e reais",
+          "canal": "Professora Angela"
+        },
+        {
+          "id": "d7IBvlIOmW4",
+          "titulo": "União e interseção de intervalos reais",
+          "canal": "Gis com Giz"
+        },
+        {
+          "id": "PWA6ihGrIGQ",
+          "titulo": "Intervalos reais e operações",
+          "canal": "Professora Gisele Ramos"
+        }
       ]
     },
     {
@@ -170,6 +228,30 @@
           "url": "https://www.ufrgs.br/reamat/Calculo/livro-cfuv/main.html",
           "tipo": "livro",
           "descricao": "REAMAT/UFRGS"
+        },
+        {
+          "titulo": "Plano cartesiano",
+          "url": "https://www.todamateria.com.br/plano-cartesiano/",
+          "tipo": "artigo",
+          "descricao": "Toda Matéria"
+        },
+        {
+          "titulo": "Função",
+          "url": "https://www.todamateria.com.br/funcao/",
+          "tipo": "artigo",
+          "descricao": "Toda Matéria"
+        }
+      ],
+      "videos": [
+        {
+          "id": "M126ou0WtcM",
+          "titulo": "Funções: definição, diagrama de flechas, domínio e imagem",
+          "canal": "Exata Mente"
+        },
+        {
+          "id": "JBs07Iik6DQ",
+          "titulo": "Domínio, contradomínio e imagem",
+          "canal": "Gis com Giz"
         }
       ]
     },
@@ -206,6 +288,24 @@
           "url": "https://www.ufrgs.br/reamat/Calculo/livro-cfuv/main.html",
           "tipo": "livro",
           "descricao": "REAMAT/UFRGS"
+        },
+        {
+          "titulo": "Racionalização de denominadores",
+          "url": "https://www.todamateria.com.br/racionalizacao-de-denominadores/",
+          "tipo": "artigo",
+          "descricao": "Toda Matéria"
+        }
+      ],
+      "videos": [
+        {
+          "id": "jL54VKNNMw8",
+          "titulo": "Domínio, imagem e contradomínio",
+          "canal": "Aula De"
+        },
+        {
+          "id": "aymBSA-yHHs",
+          "titulo": "Racionalização de denominadores",
+          "canal": "Gis com Giz"
         }
       ]
     },
@@ -240,6 +340,29 @@
           "url": "https://www.ufrgs.br/reamat/Calculo/livro-cfuv/main.html",
           "tipo": "livro",
           "descricao": "REAMAT/UFRGS"
+        },
+        {
+          "titulo": "Função afim",
+          "url": "https://www.todamateria.com.br/funcao-afim/",
+          "tipo": "artigo",
+          "descricao": "Toda Matéria"
+        }
+      ],
+      "videos": [
+        {
+          "id": "xDTd2a4NJ40",
+          "titulo": "Função afim: coeficiente angular e linear",
+          "canal": "Professor Ferretto"
+        },
+        {
+          "id": "KbvcwmMnv7c",
+          "titulo": "Função do 1º grau (afim)",
+          "canal": "Gis com Giz"
+        },
+        {
+          "id": "72ddxNh47J8",
+          "titulo": "Função linear",
+          "canal": "Gis com Giz"
         }
       ]
     },
@@ -276,6 +399,34 @@
           "url": "https://www.ufrgs.br/reamat/Calculo/livro-cfuv/main.html",
           "tipo": "livro",
           "descricao": "REAMAT/UFRGS"
+        },
+        {
+          "titulo": "Função quadrática",
+          "url": "https://www.todamateria.com.br/funcao-quadratica/",
+          "tipo": "artigo",
+          "descricao": "Toda Matéria"
+        }
+      ],
+      "videos": [
+        {
+          "id": "Z5aVW_Zgifk",
+          "titulo": "Função quadrática: conceitos iniciais",
+          "canal": "Professor Ferretto"
+        },
+        {
+          "id": "CNqeTO2tCuI",
+          "titulo": "Zeros, raízes e Bhaskara",
+          "canal": "Professor Ferretto"
+        },
+        {
+          "id": "U9I1LFFcUkw",
+          "titulo": "Gráfico: a parábola",
+          "canal": "Professor Ferretto"
+        },
+        {
+          "id": "hrRMRpzuuVE",
+          "titulo": "Vértice da parábola",
+          "canal": "Vitor Rezende Almeida"
         }
       ]
     }
