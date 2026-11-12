@@ -1,6 +1,6 @@
 {
   "turma": "Engenharia de Software · 2º semestre",
-  "atualizado_em": "2026-11-09",
+  "atualizado_em": "2026-11-11",
   "materias": [
     {
       "id": "logica",
@@ -27,7 +27,16 @@
       "cor": "#7a3fc2"
     }
   ],
-  "avisos": [],
+  "avisos": [
+    {
+      "id": "revisao-1-calculo",
+      "tipo": "exercicio",
+      "materia": "calculo1",
+      "titulo": "Revisão I: derivadas",
+      "data": "2026-11-12",
+      "descricao": "Lista de revisão da aula de 10/11."
+    }
+  ],
   "arquivos": [
     {
       "id": "guia-engsoft",
@@ -61,9 +70,9 @@
     {
       "materia": "calculo1",
       "prioridade": "alta",
-      "titulo": "Função quadrática: Δ e vértice",
-      "texto": "Faça a tabela da situação de aprendizagem sem olhar a resposta.",
-      "link": "#/materia/calculo1/aula/2026-09-03"
+      "titulo": "Revisão I: derivadas",
+      "texto": "Para amanhã. Assista aos vídeos de regra da cadeia e faça a mini prova da aula.",
+      "link": "#/materia/calculo1/aula/2026-11-10"
     },
     {
       "materia": "engsoft",

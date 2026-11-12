@@ -429,6 +429,62 @@
           "canal": "Vitor Rezende Almeida"
         }
       ]
+    },
+    {
+      "id": "2026-11-10",
+      "data": "2026-11-10",
+      "titulo": "Revisão I: derivadas",
+      "topicos": [
+        "regra do produto",
+        "regra do quociente",
+        "regra da cadeia",
+        "derivação implícita",
+        "taxa de variação"
+      ],
+      "fotos": [],
+      "resumo": "- **Taxa de variação:** derivada positiva, a grandeza está **aumentando**; negativa, está **diminuindo**.\n- **Produto:** $(f \\cdot g)' = f'g + fg'$\n- **Quociente:** $\\left(\\frac{f}{g}\\right)' = \\frac{f'g - fg'}{g^2}$\n- **Cadeia:** $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$. Deriva a função de fora e multiplica pela derivada de dentro.\n- **Raiz e fração viram potência:** $\\sqrt{u} = u^{1/2}$ e $\\frac{1}{\\sqrt{u}} = u^{-1/2}$.\n- **Implícita:** deriva os dois lados em relação a $x$; tudo que tem $y$ ganha um $y'$; no fim, isola $y'$.",
+      "transcricao": "*Lista de revisão enviada em PDF (aula de 10/11/2026).*\n\n**1.** Um fabricante observa que, $t$ meses após o lançamento de um novo produto no mercado, $x(t) = t^2 + 3t$ centenas de unidades podem ser produzidas e vendidas por um preço unitário $p(t) = -2t^{3/2} + 30$ reais.\na. Expresse a receita $R(t)$ com a venda do produto em função do tempo.\nb. A que taxa a receita está variando em relação ao tempo 4 meses após o lançamento do produto? A receita está aumentando ou diminuindo nessa ocasião?\n\n**2.** Um biólogo modela o efeito da introdução de uma toxina em uma colônia de bactérias através da função\n$$P(t) = \\frac{t + 1}{t^2 + t + 4}$$\nonde $P$ é o número de bactérias da colônia (em milhões) e $t$ horas após a toxina ser introduzida.\na. A que taxa a população está variando no momento em que a toxina é introduzida? A população está aumentando ou diminuindo nessa ocasião?\nb. Em que instante a população começa a diminuir? De quanto a população aumenta antes de começar a diminuir?\n\n**Nos problemas de 1 a 4, use a regra da cadeia para calcular a derivada $\\frac{dy}{dx}$ da função dada e simplifique a resposta.**\n1. $y = u^2 + 1$; $u = 3x - 2$\n2. $y = 1 - 3u^2$; $u = 3 - 2x$\n3. $y = \\sqrt{u}$; $u = x^2 + 2x - 3$\n4. $y = 2u^2 - u + 5$; $u = 1 - x^2$\n\n**Nos problemas de 5 a 12, calcule a derivada da função dada e simplifique a resposta.**\n5. $f(x) = (2x + 3)^{1/4}$\n6. $f(x) = \\frac{1}{\\sqrt{5 - 3x}}$\n7. $f(x) = (2x + 1)^4$\n8. $f(x) = \\sqrt{5x^6 - 12}$\n9. $f(x) = (x^5 - 4x^3 - 7)^8$\n10. $f(t) = (3t^4 - 7t^2 + 9)^5$\n11. $f(t) = \\frac{1}{5t^2 - 6t + 2}$\n12. $g(x) = \\frac{1}{\\sqrt{4x^2 + 1}}$\n\n**Nos problemas de 13 a 16 calcule $\\frac{dy}{dx}$ por derivação implícita.**\n13. $2x + 3y = 7$\n14. $5x - 7y = 3$\n15. $x^3 - y^2 = 5$\n16. $x^3 + y^3 = xy$",
+      "aprofundamento": "### Problema 1: receita\n**a)** Receita = quantidade × preço:\n$$R(t) = (t^2 + 3t)(-2t^{3/2} + 30) = -2t^{7/2} - 6t^{5/2} + 30t^2 + 90t$$\nem **centenas de reais**.\n\n**b)** Regra do produto, com $x'(t) = 2t + 3$ e $p'(t) = -3\\sqrt{t}$. Em $t = 4$: $x = 28$, $p = 14$, $x' = 11$, $p' = -6$.\n$$R'(4) = 11 \\cdot 14 + 28 \\cdot (-6) = 154 - 168 = -14$$\nSão $-14$ centenas de reais por mês, ou seja, **−R\\$ 1.400 por mês**. Negativo: a receita está **diminuindo**.\n\n### Problema 2: bactérias\n$$P'(t) = \\frac{1 \\cdot (t^2 + t + 4) - (t + 1)(2t + 1)}{(t^2 + t + 4)^2} = \\frac{-t^2 - 2t + 3}{(t^2 + t + 4)^2}$$\n\n**a)** $P'(0) = \\frac{3}{16} = 0{,}1875$ milhão por hora (cerca de 187.500 bactérias/h). Positivo: **aumentando**.\n\n**b)** O denominador é sempre positivo, então o sinal vem do numerador: $-t^2 - 2t + 3 = 0 \\Rightarrow (t + 3)(t - 1) = 0 \\Rightarrow t = 1$.\nDepois de **1 hora** a população diminui. Aumento: $P(1) - P(0) = \\frac{1}{3} - \\frac{1}{4} = \\frac{1}{12}$ milhão $\\approx$ **83.333 bactérias**.\n\n### Questões 1 a 4 (regra da cadeia)\n| | $\\frac{dy}{du}$ | $\\frac{du}{dx}$ | Resposta |\n|---|---|---|---|\n| 1 | $2u$ | $3$ | $18x - 12$ |\n| 2 | $-6u$ | $-2$ | $36 - 24x$ |\n| 3 | $\\frac{1}{2\\sqrt{u}}$ | $2x + 2$ | $\\frac{x + 1}{\\sqrt{x^2 + 2x - 3}}$ |\n| 4 | $4u - 1$ | $-2x$ | $8x^3 - 6x$ |\n\n### Questões 5 a 12\n5. $f' = \\frac{1}{4}(2x+3)^{-3/4} \\cdot 2 = \\frac{1}{2(2x+3)^{3/4}}$\n6. $f = (5-3x)^{-1/2} \\Rightarrow f' = \\frac{3}{2(5-3x)^{3/2}}$\n7. $f' = 8(2x+1)^3$\n8. $f' = \\frac{15x^5}{\\sqrt{5x^6 - 12}}$\n9. $f' = 8(x^5 - 4x^3 - 7)^7(5x^4 - 12x^2)$\n10. $f' = 5(3t^4 - 7t^2 + 9)^4(12t^3 - 14t) = 10t(6t^2 - 7)(3t^4 - 7t^2 + 9)^4$\n11. $f = (5t^2 - 6t + 2)^{-1} \\Rightarrow f' = \\frac{6 - 10t}{(5t^2 - 6t + 2)^2}$\n12. $g = (4x^2+1)^{-1/2} \\Rightarrow g' = \\frac{-4x}{(4x^2+1)^{3/2}}$\n\n### Questões 13 a 16 (implícita)\n13. $2 + 3y' = 0 \\Rightarrow y' = -\\frac{2}{3}$\n14. $5 - 7y' = 0 \\Rightarrow y' = \\frac{5}{7}$\n15. $3x^2 - 2yy' = 0 \\Rightarrow y' = \\frac{3x^2}{2y}$\n16. $3x^2 + 3y^2y' = y + xy' \\Rightarrow y'(3y^2 - x) = y - 3x^2 \\Rightarrow y' = \\frac{y - 3x^2}{3y^2 - x}$\n\n### Erros que mais derrubam nota\n- Esquecer de multiplicar pela derivada de dentro (o \"$\\cdot 2$\" da questão 7).\n- Errar o expoente de raiz no denominador: $u^{-1/2}$ vira $u^{-3/2}$ ao derivar.\n- Na 16, tratar $xy$ como se fosse só $y'$: é um produto, dá $y + xy'$.\n- Não responder \"aumentando ou diminuindo\": a resposta está no **sinal** da derivada.",
+      "referencias": [
+        {
+          "titulo": "Cálculo de Funções de Uma Variável (livro aberto, capítulo de derivadas)",
+          "url": "https://www.ufrgs.br/reamat/Calculo/livro-cfuv/main.html",
+          "tipo": "livro",
+          "descricao": "REAMAT/UFRGS"
+        }
+      ],
+      "videos": [
+        {
+          "id": "vdZnk6Febko",
+          "titulo": "Derivada da função composta: regra da cadeia",
+          "canal": "Professor Jonathan Zangeski"
+        },
+        {
+          "id": "E4vL2JW2hro",
+          "titulo": "Regra da cadeia com raiz: exercício resolvido",
+          "canal": "Prof Raimundo Augusto"
+        },
+        {
+          "id": "wkWyZYS9HIw",
+          "titulo": "Derivada do produto e do quociente",
+          "canal": "Prof. Gui"
+        },
+        {
+          "id": "VaX6a1dktvk",
+          "titulo": "Regra do produto e regra do quociente",
+          "canal": "Ensino de Potência"
+        },
+        {
+          "id": "rG1bR9_TrRA",
+          "titulo": "Derivada implícita",
+          "canal": "Matemática Fácil"
+        },
+        {
+          "id": "tU2E-UhCP0w",
+          "titulo": "Derivada de função implícita",
+          "canal": "Professor Aquino"
+        }
+      ]
     }
   ],
   "flashcards": [
@@ -956,6 +1012,90 @@
       "topico": "imagem",
       "frente": "Imagem quando $a < 0$",
       "verso": "$(-\\infty, y_v]$"
+    },
+    {
+      "id": "2026-11-10-f1",
+      "aula": "2026-11-10",
+      "topico": "taxa de variação",
+      "frente": "Derivada positiva / negativa significa…",
+      "verso": "Positiva: **aumentando**. Negativa: **diminuindo**."
+    },
+    {
+      "id": "2026-11-10-f2",
+      "aula": "2026-11-10",
+      "topico": "regra do produto",
+      "frente": "$(f \\cdot g)'$",
+      "verso": "$f'g + fg'$"
+    },
+    {
+      "id": "2026-11-10-f3",
+      "aula": "2026-11-10",
+      "topico": "regra do quociente",
+      "frente": "$\\left(\\frac{f}{g}\\right)'$",
+      "verso": "$\\frac{f'g - fg'}{g^2}$"
+    },
+    {
+      "id": "2026-11-10-f4",
+      "aula": "2026-11-10",
+      "topico": "regra da cadeia",
+      "frente": "Regra da cadeia",
+      "verso": "$\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$"
+    },
+    {
+      "id": "2026-11-10-f5",
+      "aula": "2026-11-10",
+      "topico": "regra da cadeia",
+      "frente": "$\\frac{d}{dx}(ax+b)^n$",
+      "verso": "$n(ax+b)^{n-1} \\cdot a$"
+    },
+    {
+      "id": "2026-11-10-f6",
+      "aula": "2026-11-10",
+      "topico": "regra da cadeia",
+      "frente": "$\\sqrt{u}$ como potência e sua derivada",
+      "verso": "$u^{1/2}$; derivada $\\frac{u'}{2\\sqrt{u}}$"
+    },
+    {
+      "id": "2026-11-10-f7",
+      "aula": "2026-11-10",
+      "topico": "regra da cadeia",
+      "frente": "$\\frac{1}{\\sqrt{u}}$ como potência",
+      "verso": "$u^{-1/2}$; derivada $-\\frac{1}{2}u^{-3/2} \\cdot u'$"
+    },
+    {
+      "id": "2026-11-10-f8",
+      "aula": "2026-11-10",
+      "topico": "regra da cadeia",
+      "frente": "$\\frac{1}{u}$ e sua derivada",
+      "verso": "$u^{-1}$; derivada $-\\frac{u'}{u^2}$"
+    },
+    {
+      "id": "2026-11-10-f9",
+      "aula": "2026-11-10",
+      "topico": "derivação implícita",
+      "frente": "Primeiro passo da derivação implícita",
+      "verso": "Derivar **os dois lados** em relação a $x$."
+    },
+    {
+      "id": "2026-11-10-f10",
+      "aula": "2026-11-10",
+      "topico": "derivação implícita",
+      "frente": "Derivada de $y^2$ em relação a $x$",
+      "verso": "$2y \\cdot y'$"
+    },
+    {
+      "id": "2026-11-10-f11",
+      "aula": "2026-11-10",
+      "topico": "derivação implícita",
+      "frente": "Derivada de $xy$ em relação a $x$",
+      "verso": "$y + xy'$ (regra do produto)"
+    },
+    {
+      "id": "2026-11-10-f12",
+      "aula": "2026-11-10",
+      "topico": "derivação implícita",
+      "frente": "Último passo da derivação implícita",
+      "verso": "Juntar os termos com $y'$ e **isolar** $y'$."
     }
   ],
   "questoes": [
@@ -1848,6 +1988,190 @@
       "enunciado": "Ache o vértice de $f(x) = x^2 - 5x + 6$.",
       "explicacao": "$x_v = -\\frac{b}{2a}$, depois $y_v = f(x_v)$.",
       "resposta": "$x_v = \\frac{5}{2}$; $y_v = \\frac{25}{4} - \\frac{25}{2} + 6 = -\\frac{1}{4}$. $V\\left(\\frac{5}{2}, -\\frac{1}{4}\\right)$."
+    },
+    {
+      "id": "2026-11-10-q1",
+      "aula": "2026-11-10",
+      "topico": "regra da cadeia",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Derivada de $f(x) = (2x+1)^4$:",
+      "explicacao": "$4(2x+1)^3 \\cdot 2$.",
+      "alternativas": [
+        "$4(2x+1)^3$",
+        "$8(2x+1)^3$",
+        "$8(2x+1)^4$",
+        "$2(2x+1)^3$"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-11-10-q2",
+      "aula": "2026-11-10",
+      "topico": "regra da cadeia",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "$y = u^2 + 1$ e $u = 3x - 2$. Quanto é $\\frac{dy}{dx}$?",
+      "explicacao": "$2u \\cdot 3 = 6(3x-2)$.",
+      "alternativas": [
+        "$2(3x-2)$",
+        "$18x - 12$",
+        "$6x - 4$",
+        "$9x^2 - 12x + 5$"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-11-10-q3",
+      "aula": "2026-11-10",
+      "topico": "regra da cadeia",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Derivada de $f(x) = \\sqrt{5x^6 - 12}$:",
+      "explicacao": "$\\frac{1}{2}(5x^6-12)^{-1/2} \\cdot 30x^5$.",
+      "alternativas": [
+        "$\\frac{30x^5}{\\sqrt{5x^6-12}}$",
+        "$\\frac{15x^5}{\\sqrt{5x^6-12}}$",
+        "$\\frac{1}{2\\sqrt{5x^6-12}}$",
+        "$15x^5\\sqrt{5x^6-12}$"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-11-10-q4",
+      "aula": "2026-11-10",
+      "topico": "regra da cadeia",
+      "tipo": "multipla",
+      "dificuldade": 3,
+      "enunciado": "Derivada de $g(x) = \\frac{1}{\\sqrt{4x^2+1}}$:",
+      "explicacao": "$g = (4x^2+1)^{-1/2}$; $g' = -\\frac{1}{2}(4x^2+1)^{-3/2} \\cdot 8x$.",
+      "alternativas": [
+        "$\\frac{-4x}{(4x^2+1)^{3/2}}$",
+        "$\\frac{4x}{(4x^2+1)^{3/2}}$",
+        "$\\frac{-8x}{\\sqrt{4x^2+1}}$",
+        "$\\frac{-1}{2(4x^2+1)^{3/2}}$"
+      ],
+      "correta": 0
+    },
+    {
+      "id": "2026-11-10-q5",
+      "aula": "2026-11-10",
+      "topico": "regra do quociente",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Derivada de $f(t) = \\frac{1}{5t^2 - 6t + 2}$:",
+      "explicacao": "$-(10t - 6)/(5t^2-6t+2)^2$.",
+      "alternativas": [
+        "$\\frac{1}{10t - 6}$",
+        "$\\frac{6 - 10t}{(5t^2-6t+2)^2}$",
+        "$\\frac{10t - 6}{(5t^2-6t+2)^2}$",
+        "$-\\frac{1}{(5t^2-6t+2)^2}$"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-11-10-q6",
+      "aula": "2026-11-10",
+      "topico": "derivação implícita",
+      "tipo": "multipla",
+      "dificuldade": 1,
+      "enunciado": "Por derivação implícita, em $2x + 3y = 7$, $y' =$",
+      "explicacao": "$2 + 3y' = 0$.",
+      "alternativas": [
+        "$\\frac{2}{3}$",
+        "$-\\frac{2}{3}$",
+        "$-\\frac{3}{2}$",
+        "$\\frac{7}{3}$"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-11-10-q7",
+      "aula": "2026-11-10",
+      "topico": "derivação implícita",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Em $x^3 - y^2 = 5$, $y' =$",
+      "explicacao": "$3x^2 - 2yy' = 0$.",
+      "alternativas": [
+        "$\\frac{3x^2}{2y}$",
+        "$-\\frac{3x^2}{2y}$",
+        "$\\frac{2y}{3x^2}$",
+        "$3x^2 - 2y$"
+      ],
+      "correta": 0
+    },
+    {
+      "id": "2026-11-10-q8",
+      "aula": "2026-11-10",
+      "topico": "derivação implícita",
+      "tipo": "aberta",
+      "dificuldade": 3,
+      "enunciado": "Calcule $y'$ em $x^3 + y^3 = xy$.",
+      "explicacao": "O lado direito é um produto.",
+      "resposta": "$3x^2 + 3y^2y' = y + xy' \\Rightarrow y' = \\frac{y - 3x^2}{3y^2 - x}$"
+    },
+    {
+      "id": "2026-11-10-q9",
+      "aula": "2026-11-10",
+      "topico": "taxa de variação",
+      "tipo": "multipla",
+      "dificuldade": 2,
+      "enunciado": "Receita $R(t) = x(t)p(t)$ com $x = t^2 + 3t$ e $p = -2t^{3/2} + 30$. Quanto vale $R'(4)$ (em centenas de reais por mês)?",
+      "explicacao": "$R'(4) = 11 \\cdot 14 + 28 \\cdot (-6) = -14$.",
+      "alternativas": [
+        "14",
+        "-14",
+        "154",
+        "-168"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-11-10-q10",
+      "aula": "2026-11-10",
+      "topico": "taxa de variação",
+      "tipo": "vf",
+      "dificuldade": 1,
+      "enunciado": "Se $R'(4) < 0$, a receita está aumentando em $t = 4$.",
+      "explicacao": "Derivada negativa: diminuindo.",
+      "correta": false
+    },
+    {
+      "id": "2026-11-10-q11",
+      "aula": "2026-11-10",
+      "topico": "regra do quociente",
+      "tipo": "multipla",
+      "dificuldade": 3,
+      "enunciado": "Para $P(t) = \\frac{t+1}{t^2+t+4}$, em que instante a população começa a diminuir?",
+      "explicacao": "Numerador de $P'$: $-t^2 - 2t + 3 = 0 \\Rightarrow t = 1$.",
+      "alternativas": [
+        "0 h",
+        "1 h",
+        "3 h",
+        "4 h"
+      ],
+      "correta": 1
+    },
+    {
+      "id": "2026-11-10-q12",
+      "aula": "2026-11-10",
+      "topico": "regra do quociente",
+      "tipo": "aberta",
+      "dificuldade": 3,
+      "enunciado": "Ainda com $P(t) = \\frac{t+1}{t^2+t+4}$ (milhões), quanto a população aumenta antes de começar a diminuir?",
+      "explicacao": "Compare $P(1)$ com $P(0)$.",
+      "resposta": "$P(1) - P(0) = \\frac{1}{3} - \\frac{1}{4} = \\frac{1}{12}$ milhão $\\approx 83.333$ bactérias."
+    },
+    {
+      "id": "2026-11-10-q13",
+      "aula": "2026-11-10",
+      "topico": "regra da cadeia",
+      "tipo": "vf",
+      "dificuldade": 2,
+      "enunciado": "A derivada de $(x^5 - 4x^3 - 7)^8$ é $8(x^5 - 4x^3 - 7)^7$.",
+      "explicacao": "Falta multiplicar por $5x^4 - 12x^2$.",
+      "correta": false
     }
   ],
   "mapa": {
@@ -1968,6 +2292,24 @@
                 "titulo": "Vértice $\\left(-\\frac{b}{2a}, -\\frac{\\Delta}{4a}\\right)$"
               }
             ]
+          }
+        ]
+      },
+      {
+        "titulo": "Derivadas",
+        "aula": "2026-11-10",
+        "filhos": [
+          {
+            "titulo": "Taxa de variação: sinal da derivada"
+          },
+          {
+            "titulo": "Produto e quociente"
+          },
+          {
+            "titulo": "Regra da cadeia"
+          },
+          {
+            "titulo": "Derivação implícita"
           }
         ]
       }
